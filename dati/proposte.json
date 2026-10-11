@@ -1,0 +1,1640 @@
+{
+  "schema_version": "1.1",
+  "generated": "2026-09-20",
+  "source_model": "claude (consolidamento su dataset italia-2040 v1.0)",
+  "note": "Ogni oggetto e' un'unita' atomica di merge. Il join tra dataset di modelli diversi va fatto su (ambito + leva), mai sul titolo.",
+  "proposals": [
+    {
+      "id": "P-STATO-01",
+      "ambito": "stato-leggibile",
+      "problema": "La PA richiede dati che gia' possiede; costo di conformita' regressivo",
+      "leva": "Principio once-only reso obbligo giuridico, atto annullabile se violato",
+      "evidenza": [
+        "F-STATO-01"
+      ],
+      "benchmark": "Estonia (X-Road, once-only per legge)",
+      "oppositori": "Enti che perdono controllo sul procedimento",
+      "kpi": "Zero certificati richiesti tra PA; -40% adempimenti avvio impresa",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "trascurabile",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "stato": "proposta",
+      "nota": "Contributo Gemini integrato da P-STATO-08-GEM; soglie, costi e compatibilita da valutare prima dell approvazione."
+    },
+    {
+      "id": "P-STATO-02",
+      "ambito": "stato-leggibile",
+      "problema": "Stock normativo in crescita senza rimozione",
+      "leva": "Sunset clause a 5 anni su norme amministrative, salvo riconferma motivata con dati",
+      "evidenza": [
+        "F-STATO-02"
+      ],
+      "benchmark": "Nuova Zelanda, UK (one-in-two-out)",
+      "oppositori": "Chi trae rendita dalla complessita' (consulenza, intermediazione)",
+      "kpi": "Riduzione del numero di adempimenti burocratici vigenti di almeno il 20% entro 3 anni",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-STATO-03",
+      "ambito": "stato-leggibile",
+      "problema": "Norme stratificate e non consolidate per materia",
+      "leva": "Codice unico per materia con testo consolidato digitale a valore legale",
+      "evidenza": [
+        "F-STATO-02"
+      ],
+      "benchmark": "Francia (codification permanente)",
+      "oppositori": "Amministrazioni settoriali",
+      "kpi": "Almeno 3 codici di settore unificati all'anno con riduzione del contenzioso amministrativo del 30%",
+      "fase": 1,
+      "vincolo_giuridico": "legge delega",
+      "costo": "basso",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "stato": "proposta",
+      "nota": "Contributo Gemini integrato da P-STATO-09-GEM; soglie, costi e compatibilita da valutare prima dell approvazione."
+    },
+    {
+      "id": "P-STATO-04",
+      "ambito": "stato-leggibile",
+      "problema": "Il silenzio-assenso oggi va fatto valere in giudizio",
+      "leva": "Certificazione automatica rilasciata dal sistema allo scadere del termine",
+      "evidenza": [
+        "F-STATO-01"
+      ],
+      "benchmark": "Estonia, Danimarca (automazione procedimentale)",
+      "oppositori": "Enti locali con capacita' tecnica scarsa",
+      "kpi": "Tempo mediano permesso edilizio < 60 giorni",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria + interoperabilita'",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-STATO-05",
+      "ambito": "stato-leggibile",
+      "problema": "Burocrazia difensiva: firmare e' piu' rischioso di non firmare",
+      "leva": "Riforma responsabilita' erariale: distinzione netta dolo / colpa lieve",
+      "evidenza": [
+        "F-PNRR-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Chi teme allentamento dei controlli anticorruzione",
+      "kpi": "Spesa in conto capitale della PA +50%; tempi decreti attuativi < 6 mesi",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "rischio": "Percepito come impunita'; va accompagnato da trasparenza degli atti",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-STATO-06",
+      "ambito": "stato-leggibile",
+      "problema": "Norme introdotte senza misurarne l'impatto",
+      "leva": "AIR obbligatoria e pubblica + regola one-in-two-out sugli oneri",
+      "evidenza": [
+        "F-STATO-01"
+      ],
+      "benchmark": "UK Better Regulation, OCSE",
+      "oppositori": "Ministeri proponenti",
+      "kpi": "Oneri amministrativi netti a carico di PMI ridotti di almeno 5 miliardi annui entro il 2027",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-FISC-01",
+      "ambito": "fisco",
+      "problema": "Cuneo fiscale alto su redditi da lavoro medio-bassi",
+      "leva": "Riduzione strutturale del cuneo, finanziata non a debito",
+      "evidenza": [
+        "F-ECO-03",
+        "F-FISC-01"
+      ],
+      "benchmark": "Media OCSE",
+      "oppositori": "Chi perde agevolazioni usate come copertura",
+      "kpi": "Cuneo fiscale medio sceso sotto il 40% (allineato alla media OCSE) entro il 2028",
+      "fase": 2,
+      "vincolo_giuridico": "legge di bilancio",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "dipende_da": [
+        "P-FISC-02",
+        "P-FISC-03",
+        "P-FISC-05"
+      ],
+      "stato": "proposta"
+    },
+    {
+      "id": "P-FISC-02",
+      "ambito": "fisco",
+      "problema": "Circa 600 tax expenditures mai valutate",
+      "leva": "Revisione sistematica con soppressione automatica delle inefficaci",
+      "evidenza": [
+        "F-FISC-03",
+        "F-FISC-01",
+        "F-ECO-03"
+      ],
+      "benchmark": "-",
+      "oppositori": "Ogni categoria beneficiaria",
+      "kpi": "Almeno 50 micro-agevolazioni soppresse e 8 miliardi di euro di gettito recuperati entro 24 mesi",
+      "fase": 2,
+      "vincolo_giuridico": "legge delega",
+      "costo": "nullo (genera gettito)",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "stato": "proposta",
+      "nota": "Contributo Gemini integrato da P-FISC-07-GEM; soglie, costi e compatibilita da valutare prima dell approvazione."
+    },
+    {
+      "id": "P-FISC-03",
+      "ambito": "fisco",
+      "problema": "Rendite catastali scollegate dai valori reali; tassazione sul lavoro anziche' sullo stock",
+      "leva": "Riordino catastale a invarianza di gettito, contestuale al taglio del cuneo",
+      "evidenza": [
+        "F-PARAD-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Proprietari immobiliari, ceto medio anziano",
+      "kpi": "Scostamento medio tra valori catastali e valori OMI ridotto sotto il 15% a parita' di gettito",
+      "fase": 2,
+      "vincolo_giuridico": "legge delega",
+      "costo": "nullo (neutro)",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Politicamente il punto piu' esplosivo del piano",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-FISC-04",
+      "ambito": "fisco",
+      "problema": "Soglie dimensionali fiscali e lavoristiche che disincentivano la crescita",
+      "leva": "Sostituzione degli scalini con transizione continua degli oneri",
+      "evidenza": [
+        "F-PARAD-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Nessun oppositore organizzato; ostacolo tecnico",
+      "kpi": "Quota imprese >50 addetti +30%",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-FISC-05",
+      "ambito": "fisco",
+      "problema": "Tax gap ~100 mld/anno; 60% sul reddito da lavoro autonomo",
+      "leva": "Compliance by design: precompilazione totale, incroci in tempo reale, algoritmi di rischio pubblicati",
+      "evidenza": [
+        "F-FISC-01",
+        "F-FISC-02"
+      ],
+      "benchmark": "Estonia, Danimarca",
+      "oppositori": "Categorie a alta evasione; garantisti sulla privacy fiscale",
+      "kpi": "Tax gap < 60 mld in 8 anni",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-FISC-06",
+      "ambito": "fisco",
+      "problema": "I condoni ricorrenti distruggono la tax morale",
+      "leva": "Divieto di condono per legge rinforzata per un decennio",
+      "evidenza": [
+        "F-PSICO-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Chi usa il condono come valvola politica",
+      "kpi": "Zero condoni per 5 anni e propensione all'adempimento spontaneo aumentata di almeno 5 punti",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria (non vincola il legislatore futuro: limite noto)",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Nessuna legge ordinaria puo' vincolare la successiva",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-PROD-01",
+      "ambito": "produttivita",
+      "problema": "Incentivi erogati su acquisto di beni, non su risultati",
+      "leva": "Condizionalita' a crescita misurata + valutazione d'impatto pubblica + soppressione automatica",
+      "evidenza": [
+        "F-ECO-05"
+      ],
+      "benchmark": "-",
+      "oppositori": "Beneficiari attuali",
+      "kpi": "Oltre l'80% degli incentivi pubblici erogati accompagnati da valutazione positiva di addizionalita'",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-PROD-02",
+      "ambito": "produttivita",
+      "problema": "L'investitore affronta decine di interlocutori e tempi incerti",
+      "leva": "Sportello unico nazionale investimenti con potere sostitutivo e termine certo",
+      "evidenza": [
+        "F-STATO-01"
+      ],
+      "benchmark": "Irlanda (IDA)",
+      "oppositori": "Enti locali (perdita di potere di veto)",
+      "kpi": "Tempo mediano per rilascio autorizzazioni industriali ridotto a meno di 60 giorni; +20% FDI entro 3 anni",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria + questione Titolo V",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "media",
+      "dipende_da": [],
+      "rafforzata_da": [
+        "P-IST-04"
+      ],
+      "nota": "Lo sportello unico e' attivabile con legge ordinaria nel quadro vigente (potere sostitutivo ex art. 120 Cost.). La clausola di supremazia su infrastrutture ed energia (P-IST-04) ne amplia il perimetro ma non ne e' prerequisito: la dipendenza bloccante originaria invertiva la sequenza fase 0 -> fase 3.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-PROD-03",
+      "ambito": "produttivita",
+      "problema": "Prezzo dell'energia industriale tra i piu' alti UE",
+      "leva": "Semplificazione autorizzativa rinnovabili + accumuli + scelta esplicita e documentata sul nucleare di nuova generazione",
+      "evidenza": [
+        "F-ECO-04"
+      ],
+      "benchmark": "Spagna (rinnovabili a basso costo), Francia (base nucleare)",
+      "oppositori": "Comitati locali, settori incumbent",
+      "kpi": "Differenziale di prezzo dell'energia elettrica industriale rispetto alla media UE azzerato entro il 2028",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria + Titolo V",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Tema politicamente contestato: il nucleare va trattato come variante A/B, non come dato",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-PROD-04",
+      "ambito": "produttivita",
+      "problema": "Servizi protetti a bassa produttivita' (professioni, concessioni, distribuzione, balneari)",
+      "leva": "Apertura concorrenziale con transizione lunga e indennizzi",
+      "evidenza": [
+        "F-ECO-05"
+      ],
+      "benchmark": "UE (direttiva servizi), raccomandazioni OCSE",
+      "oppositori": "Ordini e categorie concessionarie",
+      "kpi": "Produttivita' oraria del lavoro nei servizi aumentata di almeno 1 punto percentuale all'anno",
+      "fase": 2,
+      "vincolo_giuridico": "legge annuale concorrenza",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "nota": "Il costo e' prevalentemente di indennizzo transitorio ai titolari di rendite legittimamente acquisite.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-LAV-01",
+      "ambito": "lavoro-capitale-umano",
+      "problema": "Transizione scuola-lavoro tra le peggiori d'Europa",
+      "leva": "Sistema duale su scala tedesca: ITS a 200.000 studenti, imprese coinvolte per obbligo o contributo",
+      "evidenza": [
+        "F-LAV-01"
+      ],
+      "benchmark": "Germania, Svizzera",
+      "oppositori": "Parte del mondo scolastico (rischio subordinazione all'impresa)",
+      "kpi": "Occupati entro 3 anni dal titolo dal 67,6% all'80%",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-LAV-02",
+      "ambito": "lavoro-capitale-umano",
+      "problema": "Dualismo insider/outsider e giungla dei contratti a termine",
+      "leva": "Contratto unico a tutele crescenti con costo di uscita crescente e prevedibile",
+      "evidenza": [
+        "F-ECO-03"
+      ],
+      "benchmark": "Danimarca (flexicurity)",
+      "oppositori": "Sindacati (perdita tutele insider)",
+      "kpi": "Quota contratti a termine non stagionali scesa sotto il 12%; durata media aumentata di oltre 6 mesi",
+      "fase": 2,
+      "vincolo_giuridico": "legge delega",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "media",
+      "dipende_da": [
+        "P-LAV-03"
+      ],
+      "gate": "Attivabile solo dopo verifica dei tassi di ricollocazione dei CPI",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-LAV-03",
+      "ambito": "lavoro-capitale-umano",
+      "problema": "Centri per l'impiego inefficaci: precondizione mancante di ogni riforma del lavoro",
+      "leva": "Presa in carico entro 30 giorni, budget formativo trasferibile alla persona, valutazione sui tassi di ricollocazione",
+      "evidenza": [
+        "F-LAV-01"
+      ],
+      "benchmark": "Danimarca, Germania (Bundesagentur)",
+      "oppositori": "Regioni titolari delle politiche attive",
+      "kpi": "Tasso di ricollocazione a 6 mesi",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria + intesa Stato-Regioni",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-LAV-04",
+      "ambito": "lavoro-capitale-umano",
+      "problema": "Dumping contrattuale e salari reali sotto il livello 1990",
+      "leva": "Soglia minima agganciata ai CCNL piu' rappresentativi + detassazione premi di produttivita'",
+      "evidenza": [
+        "F-ECO-03"
+      ],
+      "benchmark": "Germania (Mindestlohn), modelli nordici",
+      "oppositori": "Chi teme effetti occupazionali; parte del sindacato teme svuotamento della contrattazione",
+      "kpi": "Salario reale mediano in aumento di almeno l'1,5% annuo; lavoratori sotto soglia poverta' <5%",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Tema contestato: esiste letteratura discorde sugli effetti occupazionali",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-LAV-05",
+      "ambito": "lavoro-capitale-umano",
+      "problema": "Saldo laureati 25-34 negativo; sgravi fiscali per i rientri poco efficaci",
+      "leva": "Leve non fiscali: carriere per merito, laboratori finanziati, casa accessibile nelle citta' universitarie",
+      "evidenza": [
+        "F-DEMO-04",
+        "F-DEMO-05"
+      ],
+      "benchmark": "Germania, Paesi Bassi (attrattivita' ricerca)",
+      "oppositori": "Sistema accademico a reclutamento locale",
+      "kpi": "Saldo migratorio laureati in pareggio in 10 anni",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMO-01",
+      "ambito": "demografia",
+      "problema": "Divario tra figli desiderati e figli nati (760k vs 355k)",
+      "leva": "Nidi 0-3 a copertura universale, costo marginale vicino a zero dal secondo figlio",
+      "evidenza": [
+        "F-DEMO-03",
+        "F-DEMO-01",
+        "F-DEMO-08",
+        "F-ECO-06"
+      ],
+      "benchmark": "Francia, Danimarca",
+      "oppositori": "Vincolo di bilancio; capacita' realizzativa comunale",
+      "kpi": "Copertura nido 0-3 al 60%; fecondita' a 1,45 in 15 anni",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria + LEP",
+      "costo": "alto",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "stato": "proposta",
+      "nota": "Contributo Gemini integrato da P-DEMO-07-GEM; soglie, costi e compatibilita da valutare prima dell approvazione."
+    },
+    {
+      "id": "P-DEMO-02",
+      "ambito": "demografia",
+      "problema": "Orari scolastici incompatibili con il lavoro dei genitori",
+      "leva": "Tempo pieno reale su tutto il territorio",
+      "evidenza": [
+        "F-DEMO-08"
+      ],
+      "benchmark": "Francia, Paesi Bassi",
+      "oppositori": "Vincoli di organico e edilizia scolastica",
+      "kpi": "Quota classi a tempo pieno estesa ad almeno il 50% al Sud e al 65% a livello nazionale entro il 2028",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMO-03",
+      "ambito": "demografia",
+      "problema": "Casa: primo vincolo dichiarato da chi rinvia i figli",
+      "leva": "Piano nazionale affitto accessibile under 35 e riuso del patrimonio pubblico inutilizzato",
+      "evidenza": [
+        "F-DEMO-03"
+      ],
+      "benchmark": "Austria (Vienna), Paesi Bassi",
+      "oppositori": "Proprietari, comuni turistici",
+      "kpi": "Incidenza canone su reddito under 35",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "alto",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMO-04",
+      "ambito": "demografia",
+      "problema": "Politiche per la famiglia rinegoziate a ogni manovra",
+      "leva": "Assegno unico stabilizzato e indicizzato per legge pluriennale",
+      "evidenza": [
+        "F-DEMO-03"
+      ],
+      "benchmark": "Francia",
+      "oppositori": "Vincolo di bilancio annuale",
+      "kpi": "Tasso di copertura dei costi standard per figlio oltre l'80% per redditi medi entro il 2028",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMO-05",
+      "ambito": "demografia",
+      "problema": "Automatismi pensionistici ripetutamente sospesi",
+      "leva": "Ripristino pieno di eta' e coefficienti automatici, con eccezioni documentate per lavori gravosi e vincolo di destinazione dei risparmi a scuola/natalita'/ricerca",
+      "evidenza": [
+        "F-DEMO-02",
+        "F-ECO-01"
+      ],
+      "benchmark": "Svezia (conti nozionali, aggiustamento automatico)",
+      "oppositori": "Coorti vicine alla pensione, sindacati",
+      "kpi": "Riduzione spesa pensionistica su PIL di 0,5 punti entro 5 anni; 100% risparmi vincolati a fondo giovani",
+      "fase": 3,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo (genera risparmi)",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "rischio": "Senza vincolo di destinazione visibile il consenso non regge",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMO-06",
+      "ambito": "demografia",
+      "problema": "Forza lavoro in calo strutturale; natalita' agisce solo a 20+ anni",
+      "leva": "Programmazione pluriennale dell'immigrazione per fabbisogno, con corridoi legali e riconoscimento rapido dei titoli",
+      "evidenza": [
+        "F-DEMO-06",
+        "F-DEMO-07"
+      ],
+      "benchmark": "Canada (express entry), Spagna",
+      "oppositori": "Elettorato esposto alla competizione salariale",
+      "kpi": "Copertura fabbisogni professionali agricoli e cura oltre il 90%; riduzione irregolari al di sotto del 15% entro il 2027",
+      "fase": 3,
+      "vincolo_giuridico": "legge ordinaria + quadro UE",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "rischio": "Tema fortemente contestato: mantenere come variante con argomenti pro/contro",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-IST-01",
+      "ambito": "istituzioni",
+      "problema": "Bicameralismo paritario: doppia lettura identica, tempi lunghi",
+      "leva": "Una sola camera legislativa; seconda camera di rappresentanza territoriale senza rapporto fiduciario",
+      "evidenza": [
+        "F-IST-01"
+      ],
+      "benchmark": "Germania (Bundesrat), Francia",
+      "oppositori": "Ceto parlamentare, partiti minori",
+      "kpi": "Tempo medio approvazione disegni di legge governativi ridotto a meno di 120 giorni; quota iniziative parlamentari >35%",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale + referendum",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Referendum da tenere solo dopo risultati visibili delle fasi 0-2 (lezione marzo 2026)",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-IST-02",
+      "ambito": "istituzioni",
+      "problema": "Abuso di decreti-legge, maxiemendamenti e fiducia",
+      "leva": "Limiti stringenti alla decretazione d'urgenza in cambio di corsie preferenziali garantite per i ddl del governo",
+      "evidenza": [
+        "F-IST-02",
+        "F-IST-06"
+      ],
+      "benchmark": "Francia (ordre du jour prioritaire)",
+      "oppositori": "Governo di turno",
+      "kpi": "Decreti legge ridotti a meno di 15 all'anno; voti di fiducia inferiori al 10% delle leggi approvate entro il 2027",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale o regolamenti parlamentari",
+      "costo": "nullo",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "Irrigidire eccessivamente i decreti legge puo' privare il Governo di tempestivita' di fronte a crisi geopolitiche o finanziarie impreviste.",
+      "nota": "Contributo Gemini integrato da P-IST-08-GEM; soglie, costi e compatibilita da valutare prima dell approvazione."
+    },
+    {
+      "id": "P-IST-03",
+      "ambito": "istituzioni",
+      "problema": "Legge elettorale riscritta ogni legislatura, due sistemi bocciati dalla Consulta",
+      "leva": "Costituzionalizzazione dei principi (soglia, premio, preferenze)",
+      "evidenza": [
+        "F-IST-03"
+      ],
+      "benchmark": "Germania",
+      "oppositori": "Maggioranza di turno",
+      "kpi": "Stabilita' della formula elettorale confermata per almeno 3 legislature consecutive senza modifiche ordinarie",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "Costituzionalizzare troppi dettagli della legge elettorale irrigidisce il sistema politico e impedisce correzioni contingenti in assemblee frammentate."
+    },
+    {
+      "id": "P-IST-04",
+      "ambito": "istituzioni",
+      "problema": "Titolo V: competenze concorrenti, conflittualita' Stato-Regioni, 21 sistemi sanitari",
+      "leva": "Clausola di supremazia su infrastrutture ed energia; LEP finanziati prima di ogni ulteriore differenziazione",
+      "evidenza": [
+        "F-SAN-01",
+        "F-SAN-02",
+        "F-IST-04",
+        "F-IST-07"
+      ],
+      "benchmark": "Germania, Spagna",
+      "oppositori": "Regioni, autonomie speciali",
+      "kpi": "Ricorsi Stato-Regioni alla Consulta ridotti di almeno il 50% entro il 2028; scostamento LEA tra regioni <10 punti",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "alto",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "nota": "Il costo e' quasi interamente il finanziamento dei livelli essenziali delle prestazioni, non la riforma ordinamentale in se'. Contributo Gemini integrato da P-IST-07-GEM; soglie, costi e compatibilita da valutare prima dell approvazione.",
+      "stato": "proposta",
+      "rischio": "La clausola di supremazia statale puo' essere percepita dalle Regioni virtuose come una ricentralizzazione autoritaria che comprime l'autonomia locale."
+    },
+    {
+      "id": "P-IST-05",
+      "ambito": "istituzioni",
+      "problema": "7.900 comuni, molti senza capacita' tecnica di progettazione",
+      "leva": "Gestioni associate obbligatorie sotto soglia per appalti, progettazione, digitale (non fusioni forzate)",
+      "evidenza": [
+        "F-IST-05",
+        "F-PNRR-01"
+      ],
+      "benchmark": "Francia (intercommunalite')",
+      "oppositori": "Sindaci dei piccoli comuni",
+      "kpi": "Almeno l'80% dei comuni sotto 5.000 abitanti con uffici tecnici associati operativi entro 24 mesi",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "L'obbligo di gestione associata puo' creare ulteriore paralisi burocratica se i piccoli comuni non dispongono di standard digitali e personale comune."
+    },
+    {
+      "id": "P-IST-06",
+      "ambito": "istituzioni",
+      "problema": "PA che invecchia, selezione lenta, dirigenza non valutata sui risultati",
+      "leva": "Reclutamento rapido per competenze + valutazione con conseguenze reali + retribuzione competitiva su poche centinaia di ruoli tecnici strategici",
+      "evidenza": [
+        "F-STATO-03"
+      ],
+      "benchmark": "Singapore (solo a chiazze), Estonia",
+      "oppositori": "Dirigenza tutelata dall'anzianita'",
+      "kpi": "Tempo medio concorsi PA ridotto a meno di 90 giorni; eta' media neoassunti inferiore a 32 anni entro il 2027",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria + contrattazione",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "La valutazione dirigenziale con conseguenze economiche e di carriera rischia di essere politicizzata se le commissioni terze non sono realmente indipendenti."
+    },
+    {
+      "id": "P-SIC-01",
+      "ambito": "sicurezza",
+      "problema": "Duplicazione dei reparti specializzati tra le quattro forze di polizia",
+      "leva": "Una specialita' = una forza, per legge, con termine di attuazione vincolante e compensazione tra corpi",
+      "evidenza": [
+        "F-SIC-01",
+        "F-SIC-03"
+      ],
+      "benchmark": "Francia, Spagna (dualismo con competenze separate)",
+      "oppositori": "Vertici dei corpi, sindacati di polizia",
+      "kpi": "Azzeramento del 100% delle duplicazioni nei reparti d'elite e specialita' entro il termine di 24 mesi",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "nota": "L'accorpamento in se' non genera risparmi: la riforma 2015 stimava <60 mln su 22,6 mld",
+      "stato": "proposta",
+      "rischio": "La separazione rigida delle specialita' riduce la flessibilita' operativa sul territorio in contesti d'emergenza o manifestazioni ad alto impatto."
+    },
+    {
+      "id": "P-SIC-02",
+      "ambito": "sicurezza",
+      "problema": "Presidi sovrapposti nello stesso comune",
+      "leva": "Piano nazionale di gravitazione territoriale con scadenza a 5 anni; risorse liberate alla polizia giudiziaria",
+      "evidenza": [
+        "F-SIC-02"
+      ],
+      "benchmark": "Francia (zones police/gendarmerie)",
+      "oppositori": "Comunita' locali, sindacati",
+      "kpi": "Eliminazione del 100% delle stazioni e commissariati ridondanti nello stesso raggio urbano entro 3 anni",
+      "fase": 1,
+      "vincolo_giuridico": "decreto ministeriale con termine di legge",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "La chiusura o riconversione di presidi storici incontra fortissima resistenza delle comunita' locali che percepiscono una perdita di sicurezza territoriale."
+    },
+    {
+      "id": "P-SIC-03",
+      "ambito": "sicurezza",
+      "problema": "Banche dati non pienamente interoperabili; polizie locali fuori dal circuito informativo",
+      "leva": "Banca dati unica interoperabile con accesso profilato alla polizia locale",
+      "evidenza": [
+        "F-SIC-01"
+      ],
+      "benchmark": "Estonia (X-Road), Germania (INPOL)",
+      "oppositori": "Garanti della privacy, gelosie tra corpi",
+      "kpi": "100% dei comandi di Polizia Locale abilitati con accesso profilato a banche dati SDI entro 18 mesi",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria + valutazione impatto privacy",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "L'accesso delle polizie locali alla banca dati SDI richiede rigorosi controlli di cybersecurity e tracciamento accessi contro rischi di fuga di notizie."
+    },
+    {
+      "id": "P-SIC-04",
+      "ambito": "sicurezza",
+      "problema": "Quattro ministeri, quattro carriere, competenze duplicate",
+      "leva": "Comparto sicurezza unico con mobilita' tra forze, mantenendo il dualismo democratico PS/CC",
+      "evidenza": [
+        "F-SIC-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Ministeri titolari, sindacati",
+      "kpi": "Almeno il 15% del personale impiegato in mansioni amministrative riallocato a funzioni operative entro 2 anni",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria + contrattazione",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "L'armonizzazione degli status economico-giuridici tra militari (Carabinieri) e civili (Polizia) comporta costi transitori elevati e frizioni sindacali."
+    },
+    {
+      "id": "P-SIC-05",
+      "ambito": "sicurezza",
+      "problema": "Impiego permanente dell'Esercito in funzione di ordine pubblico dal 2008",
+      "leva": "Militari solo su obiettivi fissi e in emergenza dichiarata a termine, con obiettivo esplicito di liberare agenti per l'investigazione",
+      "evidenza": [
+        "F-SIC-04"
+      ],
+      "benchmark": "Francia (Sentinelle, con critiche analoghe)",
+      "oppositori": "Chi usa il presidio come segnale politico",
+      "kpi": "Almeno 4.000 agenti di polizia liberati e riallocati al pattugliamento dinamico del territorio entro 12 mesi",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo (risparmio)",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "Rimuovere l'Esercito dal pattugliamento urbano puo' generare allarme sociale soggettivo nella cittadinanza anche se l'efficacia deterrente reale e' modesta."
+    },
+    {
+      "id": "P-IMM-01",
+      "ambito": "immigrazione",
+      "problema": "Ordini di allontanamento eseguiti solo per circa un terzo",
+      "leva": "Accordi di riammissione come priorita' di politica estera, con condizionalita' su visti, aiuti e commercio, negoziati a livello UE",
+      "evidenza": [
+        "F-IMM-01",
+        "F-IMM-02"
+      ],
+      "benchmark": "Negoziato UE come blocco",
+      "oppositori": "Paesi di origine; obiezioni etiche sulla condizionalita' degli aiuti",
+      "kpi": "Tasso di esecuzione effettiva dei rimpatri convalidati superiore al 60% degli ordini emessi entro il 2028",
+      "fase": 1,
+      "vincolo_giuridico": "accordi internazionali",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "I Paesi terzi d'origine possono usare la cooperazione sui rimpatri come strumento di ricatto geopolitico o chiedere contropartite finanziarie esorbitanti."
+    },
+    {
+      "id": "P-IMM-02",
+      "ambito": "immigrazione",
+      "problema": "L'espulsione del condannato e' prevista (art. 16 TU) ma poco applicata",
+      "leva": "Ufficio dedicato che segue il caso dalla sentenza all'esecuzione materiale",
+      "evidenza": [
+        "F-IMM-03"
+      ],
+      "benchmark": "-",
+      "oppositori": "Vincoli di tutela giurisdizionale, capacita' consolare",
+      "kpi": "Oltre l'85% dei cittadini stranieri condannati in via definitiva per delitti non colposi espulsi a fine pena",
+      "fase": 1,
+      "vincolo_giuridico": "norma gia' vigente; serve organizzazione",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "L'espulsione immediata post-condanna puo' essere bloccata dai ricorsi alle corti internazionali qualora nel Paese d'origine vi sia rischio di trattamenti inumani (art. 3 CEDU)."
+    },
+    {
+      "id": "P-IMM-03",
+      "ambito": "immigrazione",
+      "problema": "Decreti flussi sotto la domanda reale: generano lavoro nero e irregolarita'",
+      "leva": "Ingressi legali per lavoro dimensionati sul fabbisogno certificato",
+      "evidenza": [
+        "F-DEMO-06"
+      ],
+      "benchmark": "Canada, Germania (Fachkraefteeinwanderungsgesetz)",
+      "oppositori": "Elettorato contrario all'aumento degli ingressi",
+      "kpi": "Tasso di regolarita' contrattuale nei settori agricoltura e cura superiore all'85% entro 3 anni",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Tema contestato: tenere come variante con argomenti pro/contro",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-IMM-04",
+      "ambito": "immigrazione",
+      "problema": "Procedure di asilo lunghe: l'attesa stessa produce irregolarita'",
+      "leva": "Identificazione biometrica all'ingresso e termini certi per la decisione",
+      "evidenza": [
+        "F-IMM-04"
+      ],
+      "benchmark": "Patto UE migrazione e asilo (in vigore dal 12/06/2026)",
+      "oppositori": "ONG su garanzie procedurali",
+      "kpi": "Tempo mediano per decisione definitiva sulle richieste di protezione internazionale inferiore a 60 giorni",
+      "fase": 1,
+      "vincolo_giuridico": "regolamenti UE gia' vigenti",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "rischio": "Parte del quadro UE 2026 e' contestata in sede giurisdizionale: progettare a prova di ricorso",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-POL-01",
+      "ambito": "costi-politica",
+      "problema": "Camere che deliberano su se stesse (autodichia) sui propri trattamenti",
+      "leva": "Autorita' indipendente esterna che fissa indennita' di tutte le cariche elettive su parametro oggettivo automatico",
+      "evidenza": [
+        "F-POL-01",
+        "F-POL-02"
+      ],
+      "benchmark": "UK (IPSA)",
+      "oppositori": "Camere (perdita di autonomia)",
+      "kpi": "Indennita' parlamentare parametrata rigidamente al trattamento dei magistrati di cassazione entro 6 mesi",
+      "fase": 2,
+      "vincolo_giuridico": "legge costituzionale (autodichia)",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-POL-02",
+      "ambito": "costi-politica",
+      "problema": "Vitalizi aboliti nel 2012 ma percezione pubblica ferma; extra opachi persistono",
+      "leva": "Indennita' unica uguale per tutti + rimborsi a pie' di lista documentati e pubblicati + continuita' contributiva per il periodo di mandato",
+      "evidenza": [
+        "F-POL-02",
+        "F-POL-03"
+      ],
+      "benchmark": "-",
+      "oppositori": "Beneficiari delle voci accessorie",
+      "kpi": "100% delle spese per assistenti e trasferte parlamentari documentate con fattura elettronica pubblica",
+      "fase": 2,
+      "vincolo_giuridico": "regolamenti parlamentari / legge",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "nota": "Evitare l'aggancio al reddito precedente: renderebbe l'accesso alla politica proporzionale al reddito",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-POL-03",
+      "ambito": "costi-politica",
+      "problema": "Trasparenza limitata ai partiti: fondazioni e comitati restano fuori",
+      "leva": "Obbligo di tracciamento per chiunque finanzi attivita' politica sopra soglia bassa; registro unico nazionale in formato aperto e in tempo reale",
+      "evidenza": [
+        "F-POL-04"
+      ],
+      "benchmark": "Germania, UK (Electoral Commission)",
+      "oppositori": "Fondazioni collegate ai leader",
+      "kpi": "100% dei contributi ai partiti e fondazioni collegati tracciati online con ritardo massimo di 30 giorni",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-POL-04",
+      "ambito": "costi-politica",
+      "problema": "Italia senza una vera legge sul lobbying",
+      "leva": "Registro obbligatorio dei rappresentanti di interessi + agenda pubblica degli incontri dei decisori",
+      "evidenza": [
+        "F-POL-05"
+      ],
+      "benchmark": "UE (registro trasparenza), Irlanda, Germania",
+      "oppositori": "Lobby e decisori",
+      "kpi": "Oltre 95% degli incontri tra decisori pubblici e portatori di interessi registrati sull'agenda pubblica",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude; gemini (contributo integrato)",
+      "confidenza": "media",
+      "stato": "proposta",
+      "nota": "Contributo Gemini integrato da P-POL-06-GEM; soglie, costi e compatibilita da valutare prima dell approvazione."
+    },
+    {
+      "id": "P-POL-05",
+      "ambito": "costi-politica",
+      "problema": "Porte girevoli tra regolatore e regolato",
+      "leva": "Cooling-off period obbligatorio tra incarico pubblico e assunzione nel settore regolato",
+      "evidenza": [
+        "F-POL-05"
+      ],
+      "benchmark": "UE, USA",
+      "oppositori": "Categorie interessate",
+      "kpi": "Zero casi di passaggio al settore privato regolato prima di 24 mesi dalla cessazione dell'incarico pubblico",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-QUIR-01",
+      "ambito": "presidenza-repubblica",
+      "problema": "Poteri presidenziali reali ma esercitati in forma informale e non tracciabile (moral suasion)",
+      "leva": "Obbligo di motivazione pubblica per il rifiuto di emanazione e per il rinvio; termini certi",
+      "evidenza": [
+        "F-QUIR-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Prassi consolidata del Quirinale",
+      "kpi": "100% dei rilievi presidenziali su decreti o leggi accompagnati da motivazione scritta pubblica entro 12 mesi",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "variante": "A",
+      "nota": "Percorso A: rafforzare la garanzia mantenendo l'elezione parlamentare. Incompatibile con P-QUIR-03.",
+      "stato": "proposta",
+      "rischio": "Pubblicare le motivazioni del rifiuto di firma puo' trasformare il Quirinale in un attore politico antagonistico aperto del Governo in carica."
+    },
+    {
+      "id": "P-QUIR-02",
+      "ambito": "presidenza-repubblica",
+      "problema": "La non rielezione era convenzione, violata nel 2013 e nel 2022",
+      "leva": "Divieto costituzionale esplicito di secondo mandato",
+      "evidenza": [
+        "F-QUIR-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Chi valorizza la continuita' in crisi",
+      "kpi": "-",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "variante": "A",
+      "nota": "Misura interna al percorso A. Incompatibile con P-QUIR-03, che ridisegna la carica.",
+      "stato": "proposta",
+      "rischio": "Il divieto assoluto di secondo mandato priva la Repubblica di una figura di equilibrio collaudata durante gravissime crisi geopolitiche o di sistema."
+    },
+    {
+      "id": "P-QUIR-03",
+      "ambito": "presidenza-repubblica",
+      "problema": "Legittimazione indiretta del Capo dello Stato",
+      "leva": "Elezione diretta in quadro semipresidenziale organico",
+      "evidenza": [
+        "F-QUIR-01"
+      ],
+      "benchmark": "Francia",
+      "oppositori": "Chi teme due legittimita' concorrenti",
+      "kpi": "-",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale + referendum",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "bassa",
+      "variante": "B",
+      "nota": "Percorso B: elezione diretta in quadro semipresidenziale organico. Incompatibile con A e con il premierato.",
+      "stato": "proposta",
+      "rischio": "L'elezione diretta del Capo dello Stato crea una diarchia conflittuale permanente tra Presidente e Primo Ministro con rischio di paralisi (coabitazione)."
+    },
+    {
+      "id": "P-ACC-01",
+      "ambito": "accountability-eletti",
+      "problema": "Voto personale organizzato (reti clientelari) in collegi ampi con preferenze",
+      "leva": "Collegi uninominali o liste molto corte in collegi piccoli",
+      "evidenza": [
+        "F-PSICO-02"
+      ],
+      "benchmark": "UK, Germania (quota uninominale)",
+      "oppositori": "Partiti che perdono controllo sulle liste",
+      "kpi": "Indice di concentrazione elettorale ridotto; quota eletti con voti territorialmente diffusi >75%",
+      "fase": 3,
+      "vincolo_giuridico": "legge elettorale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "nota": "Le liste bloccate sono la soluzione opposta e peggiorativa: spostano il potere ai capipartito",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-ACC-02",
+      "ambito": "accountability-eletti",
+      "problema": "Selezione delle candidature senza regole pubbliche",
+      "leva": "Primarie regolate per legge con albo degli elettori e controlli",
+      "evidenza": [
+        "F-ACC-02"
+      ],
+      "benchmark": "USA (regolate per legge statale)",
+      "oppositori": "Partiti",
+      "kpi": "100% delle candidature parlamentari vagliate da procedure selettive trasparenti con criteri pubblici",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria (delicata su art. 49 Cost.)",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "bassa",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-ACC-03",
+      "ambito": "accountability-eletti",
+      "problema": "I dati sugli eletti esistono ma li produce un soggetto privato e non incidono sulla selezione",
+      "leva": "Scheda di valutazione istituzionale pubblica e standardizzata per ogni carica: presenze in aula e commissione, voti, atti, incarichi, patrimonio, finanziamenti",
+      "evidenza": [
+        "F-ACC-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Eletti meno attivi",
+      "kpi": "100% degli eletti con scheda di rendicontazione delle attivita' istituzionali aggiornata trimestralmente",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria / regolamenti",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-ACC-04",
+      "ambito": "accountability-eletti",
+      "problema": "Assenteismo sanzionato solo con decurtazioni marginali",
+      "leva": "Decurtazioni progressive automatiche e decadenza oltre soglia di assenze ingiustificate",
+      "evidenza": [
+        "F-ACC-02"
+      ],
+      "benchmark": "Consigli comunali e regionali italiani (gia' prevista)",
+      "oppositori": "Eletti; rischio di conflitto con art. 67",
+      "kpi": "Tasso di presenza alle votazioni in aula e commissione superiore all'85% per oltre il 90% degli eletti",
+      "fase": 2,
+      "vincolo_giuridico": "regolamenti parlamentari / legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-ACC-05",
+      "ambito": "accountability-eletti",
+      "problema": "Il voto di scambio funziona perche' l'eletto puo' consegnare pratiche, posti, licenze",
+      "leva": "Automazione e trasparenza dei criteri: togliere la merce di scambio invece di punire lo scambio",
+      "evidenza": [
+        "F-ACC-03",
+        "F-ACC-01"
+      ],
+      "benchmark": "Estonia",
+      "oppositori": "Reti di intermediazione politica",
+      "kpi": "100% dei procedimenti per assenteismo oltre il 30% conclusi con decadenza automatica o decurtazione",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "dipende_da": [
+        "P-STATO-01",
+        "P-STATO-04"
+      ],
+      "stato": "proposta"
+    },
+    {
+      "id": "P-ACC-06",
+      "ambito": "accountability-eletti",
+      "problema": "Richiesta di escludere i condannati; tensione con la presunzione di innocenza",
+      "leva": "Mantenere l'incandidabilita' alla condanna definitiva (legge Severino) e agire sui tempi del processo",
+      "evidenza": [
+        "F-ACC-03"
+      ],
+      "benchmark": "-",
+      "oppositori": "Chi chiede esclusione gia' in primo grado",
+      "kpi": "Durata media dei procedimenti giudiziari a carico di titolari di cariche pubbliche inferiore a 2 anni",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "nota": "Estendere alle condanne non definitive darebbe a un giudice di primo grado il potere di escludere un avversario politico",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-MAND-01",
+      "ambito": "limiti-di-mandato",
+      "problema": "Limiti esistono per sindaci e presidenti di regione, non per parlamentari e premier",
+      "evidenza": [
+        "F-MAND-01",
+        "F-MAND-02"
+      ],
+      "leva": "Estensione dei limiti: 3 legislature per i parlamentari, 2 mandati pieni per il Presidente del Consiglio",
+      "benchmark": "USA (presidenza), diversi ordinamenti locali",
+      "oppositori": "Ceto parlamentare",
+      "kpi": "Tasso di ricambio generazionale dei parlamentari superiore al 35% ad ogni tornata elettorale",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "Il tetto rigido a 3 legislature disperde competenze legislative complesse e aumenta il potere relativo dei funzionari ministeriali permanenti e delle lobby."
+    },
+    {
+      "id": "P-MAND-02",
+      "ambito": "limiti-di-mandato",
+      "problema": "Rotazione elusiva (due mandati, pausa, altri due) e passaggio tra cariche omologhe",
+      "leva": "Tetto cumulativo 12-15 anni per carica, con conteggio che segue la persona",
+      "evidenza": [
+        "F-MAND-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Amministratori di lungo corso",
+      "kpi": "Permanenza cumulativa media nelle cariche elettive nazionali ridotta sotto gli 8 anni a regime",
+      "fase": 3,
+      "vincolo_giuridico": "legge ordinaria/costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "Un tetto cumulativo rigido puo' essere aggirato tramite candidature in enti intermedi, societa' partecipate o assemblee regionali ed europee."
+    },
+    {
+      "id": "P-MAND-03",
+      "ambito": "limiti-di-mandato",
+      "problema": "I limiti di mandato spostano potere verso chi non e' mai sulla scheda (apparati, lobby, burocrazia)",
+      "leva": "Contrappeso obbligatorio: uffici legislativi professionalizzati, dirigenza valutata, registro lobby",
+      "evidenza": [
+        "F-MAND-03"
+      ],
+      "benchmark": "Stati USA con term limits (evidenza mista)",
+      "oppositori": "-",
+      "kpi": "Almeno il 60% dei disegni di legge accompagnati da analisi d'impatto della regolamentazione redatta dall'ufficio parlamentare",
+      "fase": 3,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "dipende_da": [
+        "P-POL-04"
+      ],
+      "stato": "proposta",
+      "rischio": "Il potenziamento degli uffici tecnici del Parlamento ha costi ricorrenti e richiede personale altamente specializzato non facile da reperire rapidamente."
+    },
+    {
+      "id": "P-SENV-01",
+      "ambito": "senatori-a-vita",
+      "problema": "Con il Senato a 200 elettivi il peso dei non eletti e' cresciuto di circa il 50% e puo' decidere la fiducia",
+      "leva": "Esclusione dei senatori a vita dal voto di fiducia, mantenendo parola, iniziativa e voto sulle leggi",
+      "evidenza": [
+        "F-SENV-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Chi vede una menomazione della carica",
+      "kpi": "-",
+      "fase": 2,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "variante": "A",
+      "nota": "Opzione minima: legge ordinaria o regolamenti parlamentari.",
+      "stato": "proposta",
+      "rischio": "Escludere i senatori a vita dal voto di fiducia riduce lo status di senatore a un ruolo dimezzato, creando una diseguaglianza tra componenti della stessa Camera."
+    },
+    {
+      "id": "P-SENV-02",
+      "ambito": "senatori-a-vita",
+      "problema": "Idem",
+      "leva": "Mandato a termine non rinnovabile (7-9 anni) al posto del seggio a vita",
+      "evidenza": [
+        "F-SENV-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "-",
+      "kpi": "-",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "variante": "B",
+      "nota": "Opzione intermedia: revisione costituzionale, mandato a termine non rinnovabile.",
+      "stato": "proposta",
+      "rischio": "La nomina a termine (7-9 anni) puo' indurre il senatore a calcolare posizionamenti politici in vista del proprio futuro post-mandato."
+    },
+    {
+      "id": "P-SENV-03",
+      "ambito": "senatori-a-vita",
+      "problema": "Idem",
+      "leva": "Assorbimento nella seconda camera senza rapporto fiduciario: il problema democratico si scioglie da se'",
+      "evidenza": [
+        "F-SENV-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "-",
+      "kpi": "-",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "variante": "C",
+      "dipende_da": [
+        "P-IST-01"
+      ],
+      "nota": "Opzione massima: la questione si scioglie nel superamento del bicameralismo paritario (dipende da P-IST-01).",
+      "stato": "proposta",
+      "rischio": "Se la seconda camera mantiene poteri legislativi su materie chiave, il voto dei senatori a vita continua a pesare sull'indirizzo politico generale."
+    },
+    {
+      "id": "P-DEMDIR-01",
+      "ambito": "democrazia-diretta",
+      "problema": "Il quorum di partecipazione trasforma l'astensione in arma di voto; quorum raggiunto 2 volte su 10 in trent'anni",
+      "leva": "Sostituzione con quorum di approvazione (Si' sopra il 25-33% dell'elettorato), indipendente dall'affluenza",
+      "evidenza": [
+        "F-REF-01",
+        "F-REF-02",
+        "F-REF-03"
+      ],
+      "benchmark": "Ordinamenti con quorum di approvazione",
+      "oppositori": "Chi usa l'astensione come strategia difensiva",
+      "kpi": "Partecipazione referendaria con voto favorevole di almeno il 25% degli aventi diritto per l'approvazione",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale (art. 75)",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "Un quorum di approvazione troppo basso rischia di consentire a minoranze agguerrite e organizzate di approvare norme respinte dalla maggioranza silenziosa."
+    },
+    {
+      "id": "P-DEMDIR-02",
+      "ambito": "democrazia-diretta",
+      "problema": "Il popolo puo' solo abrogare, mai proporre",
+      "leva": "Referendum propositivo: firme rafforzate, termine al Parlamento, controllo preventivo di costituzionalita' e obbligo di copertura",
+      "evidenza": [
+        "F-REF-04"
+      ],
+      "benchmark": "Svizzera (iniziativa popolare); California come contro-esempio",
+      "oppositori": "Parlamento; chi teme la cattura da parte di chi finanzia",
+      "kpi": "100% delle proposte di legge d'iniziativa popolare con 50.000 firme calendarizzate ed esaminate entro 6 mesi",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "media",
+      "rischio": "Senza controllo preventivo e vincolo di copertura si replica il dissesto californiano",
+      "dipende_da": [
+        "P-DEMDIR-06"
+      ],
+      "nota": "Non attivabile prima di P-DEMDIR-06 (tetti di spesa e trasparenza sulle campagne): e' la lezione californiana citata nell'analisi.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMDIR-03",
+      "ambito": "democrazia-diretta",
+      "problema": "La data del voto viene usata come arma contro i promotori",
+      "leva": "Election day referendario fisso per legge, una data annuale prestabilita",
+      "evidenza": [
+        "F-REF-05"
+      ],
+      "benchmark": "Svizzera (4 date/anno fissate in anticipo)",
+      "oppositori": "Governo di turno",
+      "kpi": "Costo per consultazione referendaria ridotto di oltre il 60% grazie all'accorpamento in data fissa annuale",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "nullo (risparmio)",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "Fissare una data annuale unica (election day) rischia di ammassare troppi quesiti eterogenei nella stessa tornata, disorientando gli elettori."
+    },
+    {
+      "id": "P-DEMDIR-04",
+      "ambito": "democrazia-diretta",
+      "problema": "Quesiti incomprensibili e informazione di parte",
+      "leva": "Obbligo di linguaggio piano + libretto informativo a ogni elettore con testo, effetti e argomenti pro/contro verificati da organismo terzo",
+      "evidenza": [
+        "F-REF-06"
+      ],
+      "benchmark": "Svizzera (libretto di voto), Oregon (Citizens' Initiative Review)",
+      "oppositori": "Comitati che traggono vantaggio dalla confusione",
+      "kpi": "Indice di leggibilita' (Gulpease) dei quesiti referendari superiore a 70 punti; 100% elettori con libretto",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta",
+      "rischio": "La redazione del libretto informativo neutrale puo' diventare essa stessa terreno di feroce scontro politico sulla scelta degli esperti e delle argomentazioni."
+    },
+    {
+      "id": "P-DEMDIR-05",
+      "ambito": "democrazia-diretta",
+      "problema": "Temi divisivi decisi senza fase deliberativa",
+      "leva": "Giuria di cittadini estratti a sorte che audisce esperti e pubblica un documento sintetico neutrale prima del voto",
+      "evidenza": [
+        "F-REF-03"
+      ],
+      "benchmark": "Irlanda (Citizens' Assembly)",
+      "oppositori": "Chi teme la delega a organismi non eletti",
+      "kpi": "Sperimentazione di almeno 3 giurie civiche per consultazioni su temi complessi entro il primo triennio",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta",
+      "rischio": "La giuria di cittadini estratti a sorte puo' essere manipolata nella selezione degli esperti o subire polarizzazione di gruppo."
+    },
+    {
+      "id": "P-DEMDIR-06",
+      "ambito": "democrazia-diretta",
+      "problema": "Con la firma digitale il costo di promozione crolla: rischio di cattura da parte di chi paga",
+      "leva": "Tetti di spesa e trasparenza totale sui finanziamenti delle campagne referendarie",
+      "evidenza": [
+        "F-REF-07"
+      ],
+      "benchmark": "California come contro-esempio",
+      "oppositori": "Promotori ben finanziati",
+      "kpi": "Tetto massimo di spesa per comitato promotore rispettato dal 100% dei comitati con bilanci certificati",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "dipende_da": [],
+      "nota": "Precondizione, non conseguenza: senza tetti di spesa e trasparenza il referendum propositivo (P-DEMDIR-02) diventa lo strumento di chi puo' pagarne la promozione.",
+      "stato": "proposta",
+      "rischio": "Tetti di spesa troppo bassi possono penalizzare i comitati civici spontanei rispetto a movimenti sostenuti da grandi organizzazioni o media."
+    },
+    {
+      "id": "P-TRASP-01",
+      "ambito": "trasparenza-parlamentare",
+      "problema": "Maxiemendamento e fiducia: un solo voto su centinaia di commi, responsabilita' individuale non tracciabile",
+      "leva": "Divieto di emendamenti sostitutivi dell'intero articolato; tempi minimi tra deposito e voto",
+      "evidenza": [
+        "F-IST-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Governo di turno",
+      "kpi": "Numero di maxiemendamenti governativi ridotto a zero; 100% commi di spesa votati singolarmente entro il 2026",
+      "fase": 2,
+      "vincolo_giuridico": "regolamenti parlamentari",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-TRASP-02",
+      "ambito": "trasparenza-parlamentare",
+      "problema": "Decreti omnibus: obbligo di omogeneita' gia' vigente e sistematicamente ignorato",
+      "leva": "Stralcio automatico delle disposizioni estranee, con rilievo formale in sede di emanazione",
+      "evidenza": [
+        "F-IST-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Governo di turno",
+      "kpi": "Materie per singolo decreto ridotte a una sola; 100% disposizioni eterogenee espunte dalla presidenza",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria (art. 15 l. 400/1988 da rendere cogente)",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "dipende_da": [],
+      "rafforzata_da": [
+        "P-QUIR-01"
+      ],
+      "nota": "Lo stralcio automatico e' ottenibile rendendo cogente l'art. 15 l. 400/1988 con legge ordinaria. Il rilievo formale del Presidente in sede di emanazione (P-QUIR-01) lo rende piu' efficace ma non e' prerequisito.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-TRASP-03",
+      "ambito": "trasparenza-parlamentare",
+      "problema": "Voto segreto usato oltre i casi di coscienza",
+      "leva": "Limitazione ai casi su persone e diritti della persona; tracciatura di tutto il resto",
+      "evidenza": [
+        "F-IST-02"
+      ],
+      "benchmark": "-",
+      "oppositori": "Gruppi parlamentari",
+      "kpi": "Quota votazioni a scrutinio segreto ridotta a meno del 2% delle deliberazioni complessive dell'aula",
+      "fase": 2,
+      "vincolo_giuridico": "regolamenti parlamentari",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-TRASP-04",
+      "ambito": "trasparenza-parlamentare",
+      "problema": "I dati parlamentari aperti li produce una fondazione privata",
+      "leva": "Obbligo di legge: ogni voto, presenza, emendamento e incarico in formato aperto con API pubblica istituzionale",
+      "evidenza": [
+        "F-ACC-02"
+      ],
+      "benchmark": "UK, USA (govtrack, istituzionalizzati)",
+      "oppositori": "-",
+      "kpi": "Uptime delle API degli atti parlamentari al 99,9% con latenza di aggiornamento inferiore a 10 minuti",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-TRASP-05",
+      "ambito": "trasparenza-parlamentare",
+      "problema": "Autodichia: regolamenti parlamentari sottratti al controllo di costituzionalita'",
+      "leva": "Sindacabilita' dei regolamenti parlamentari come ogni altra fonte",
+      "evidenza": [
+        "F-POL-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Camere",
+      "kpi": "-",
+      "fase": 3,
+      "vincolo_giuridico": "legge costituzionale",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "media",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-TRASP-06",
+      "ambito": "trasparenza-parlamentare",
+      "problema": "Circa il 75% delle leggi e' di iniziativa governativa: il Parlamento ratifica piu' di quanto legiferi",
+      "leva": "Quote garantite di calendario per l'iniziativa parlamentare e per l'opposizione, con obbligo di voto finale",
+      "evidenza": [
+        "F-IST-06"
+      ],
+      "benchmark": "UK (opposition days)",
+      "oppositori": "Governo di turno",
+      "kpi": "Quota leggi ordinarie di iniziativa parlamentare aumentata ad almeno il 35% del totale delle leggi promulgate",
+      "fase": 2,
+      "vincolo_giuridico": "regolamenti parlamentari",
+      "costo": "nullo",
+      "fonte": "claude",
+      "confidenza": "alta",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-STATO-07-GEM",
+      "ambito": "stato-leggibile",
+      "problema": "Controlli amministrativi ripetitivi possono rallentare le decisioni; manca una misura comparabile del loro peso",
+      "leva": "Sperimentare la riduzione dei soli visti amministrativi duplicativi, con tracciabilita degli atti e audit successivi basati sul rischio; conservare il controllo preventivo della Corte dei conti previsto dall art. 100 Cost.",
+      "evidenza": [
+        "F-STATO-01"
+      ],
+      "benchmark": "Regno Unito (National Audit Office - Value for Money studies)",
+      "oppositori": "Organi di controllo burocratico interno e dirigenti abituati alla deresponsabilizzazione da visto formale",
+      "kpi": "Tempo mediano dei procedimenti campione e rilievi di irregolarita: baseline e soglie da fissare prima della sperimentazione",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "gemini",
+      "confidenza": "bassa",
+      "gate": "Mappatura dei visti modificabili con legge ordinaria, parere della Corte dei conti e baseline dei procedimenti",
+      "nota": "Pilota reversibile con confronto tra uffici; verificare che la riduzione dei visti non aumenti irregolarita o contenzioso. Fonte giuridica: https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-iii/sezione-iii/articolo-100",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-DEMO-08-GEM",
+      "ambito": "demografia",
+      "problema": "Le famiglie con persone non autosufficienti hanno bisogni di cura e sostegno disomogenei sul territorio",
+      "leva": "Rafforzare e coordinare il Fondo per le non autosufficienze gia esistente con ADI e servizi sociali comunali, definendo criteri di accesso e continuita assistenziale",
+      "evidenza": [
+        "F-DEMO-02"
+      ],
+      "benchmark": "Germania (Pflegeversicherung - assicurazione obbligatoria per la non autosufficienza)",
+      "oppositori": "Gestori privati di RSA a basso standard qualitativo e mercato dell'assistenza informale non contrattualizzata",
+      "kpi": "Quota delle persone non autosufficienti prese in carico con piano integrato, per regione e classe di bisogno; baseline e target da definire",
+      "fase": 2,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "alto",
+      "fonte": "gemini",
+      "confidenza": "media",
+      "gate": "Ricognizione delle risorse attuali, fabbisogni territoriali e valutazione degli effetti sulle famiglie e sul personale di cura",
+      "nota": "Il Fondo nazionale esiste gia: https://www.lavoro.gov.it/temi-e-priorita/disabilita-e-non-autosufficienza/focus-on/fondo-per-non-autosufficienza/pagine/default . Stimare risorse addizionali e non presumere automaticamente effetti su natalita o occupazione.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-LAV-06-GEM",
+      "ambito": "lavoro-capitale-umano",
+      "problema": "La transizione dalla disoccupazione al lavoro richiede servizi formativi efficaci e accessibili",
+      "leva": "Collegare i percorsi di riqualificazione alla NASpI con offerta formativa verificata e tutoraggio; applicare eventuale condizionalita solo dopo una offerta effettivamente accessibile e congrua",
+      "evidenza": [
+        "F-ECO-03",
+        "F-LAV-01"
+      ],
+      "benchmark": "Danimarca (Flexicurity e politiche attive vincolanti)",
+      "oppositori": "Percettori di sussidi passivi privi di controlli ed enti di formazione fittizi",
+      "kpi": "Ricollocazione a 6 e 12 mesi per partecipanti comparabili; baseline e target da definire",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "gemini",
+      "confidenza": "bassa",
+      "gate": "Disponibilita territoriale dei corsi, accomodamenti per disabilita e cura, ricorso contro le sanzioni e valutazione degli effetti",
+      "nota": "Coordinare con P-LAV-03; costi di formazione e servizi da stimare, rischio di sanzionare chi non riceve una offerta utile.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-FISC-08-GEM",
+      "ambito": "fisco",
+      "problema": "Programmi di spesa e sussidi possono continuare senza una valutazione comparabile degli effetti",
+      "leva": "Rafforzare la valutazione periodica indipendente dei programmi di spesa e dei sussidi, con dati pubblici, analisi distributiva e decisione parlamentare su conferma, modifica o chiusura",
+      "evidenza": [
+        "F-ECO-01",
+        "F-ECO-02"
+      ],
+      "benchmark": "Paesi Bassi / Canada (Program Review con criteri stringenti di addizionalita')",
+      "oppositori": "Imprese e settori sussidiati senza obbligo di rendicontazione o innovazione",
+      "kpi": "Quota dei programmi valutati con dati pubblici e decisione motivata; baseline e target da definire",
+      "fase": 0,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "medio",
+      "fonte": "gemini",
+      "confidenza": "bassa",
+      "gate": "Mandato e risorse per valutatori indipendenti; confronto con Ragioneria, UPB e Parlamento senza attribuire all UPB poteri decisionali automatici",
+      "nota": "Nessun risparmio di 8 miliardi e dimostrato. Stimare per singola misura effetti fiscali, ambientali, sociali e costi di transizione.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-POL-07-GEM",
+      "ambito": "costi-politica",
+      "problema": "I conflitti di interesse nelle cariche esecutive possono compromettere imparzialita e fiducia",
+      "leva": "Definire obblighi proporzionati di dichiarazione, astensione e gestione indipendente delle partecipazioni rilevanti per titolari di cariche esecutive, con vigilanza e sanzioni soggette a ricorso",
+      "evidenza": [
+        "F-POL-01",
+        "F-POL-04"
+      ],
+      "benchmark": "USA (Ethics in Government Act) / Francia (Haute Autorité pour la transparence de la vie publique)",
+      "oppositori": "Grandi proprietari patrimoniali o imprenditori che intendono assumere cariche esecutive senza separare i propri interessi privati",
+      "kpi": "Quota di dichiarazioni complete e controllate nei termini, decisioni di astensione pubblicate; baseline e target da definire",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria",
+      "costo": "basso",
+      "fonte": "gemini",
+      "confidenza": "media",
+      "gate": "Valutazione costituzionale, tutela dei dati personali e dell impresa; soglie di rilevanza e autorita competente da definire",
+      "nota": "Blind trust o alienazione solo se il conflitto non puo essere gestito con misure meno intrusive; non pubblicare dati patrimoniali non necessari.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-STATO-10-CLA",
+      "ambito": "stato-leggibile",
+      "problema": "Una procedura solo digitale puo escludere chi non dispone di competenze, dispositivi o assistenza.",
+      "leva": "Progettare i servizi essenziali end-to-end e garantire un canale assistito equivalente; pubblicare prove di usabilita e tempi per canale.",
+      "evidenza": [],
+      "benchmark": "-",
+      "oppositori": "Enti che devono sostenere costi di assistenza e riprogettazione.",
+      "kpi": "Quota di pratiche concluse per canale, abbandoni e tempi per gruppi di utenti; baseline e target da definire.",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria e standard di servizio",
+      "costo": "medio",
+      "fonte": "claude/proposte-revisione; consolidamento codex",
+      "confidenza": "bassa",
+      "gate": "Test con utenti vulnerabili, accessibilita, costi del canale assistito e tutela dati personali verificati.",
+      "rischio": "Il canale digitale puo spostare oneri sui cittadini e aggravare il divario digitale.",
+      "nota": "Deriva da proposte/P-PA-2. Classe di costo preliminare; stima e copertura da definire prima della decisione.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-STATO-11-CLA",
+      "ambito": "stato-leggibile",
+      "problema": "Le famiglie possono non conoscere o non richiedere sostegni cui hanno diritto.",
+      "leva": "Creare uno sportello interoperabile che mostri i benefici potenzialmente spettanti e precompili, previo controllo della persona, le domande; garantire verifica umana e ricorso.",
+      "evidenza": [],
+      "benchmark": "-",
+      "oppositori": "Amministrazioni che gestiscono procedure separate e fornitori dei portali esistenti.",
+      "kpi": "Quota di aventi diritto che presenta domanda, errori di eleggibilita e ricorsi accolti; baseline e target da definire.",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria e disciplina privacy",
+      "costo": "medio",
+      "fonte": "claude/proposte-revisione; consolidamento codex",
+      "confidenza": "bassa",
+      "gate": "Mappatura dei benefici, basi giuridiche degli scambi dati, valutazione privacy e prova pilota con ricorso accessibile.",
+      "rischio": "Una precompilazione errata puo escludere aventi diritto o esporre dati sensibili.",
+      "nota": "Deriva da proposte/P-SER-6. Il sistema non attribuisce automaticamente benefici; costo e copertura da quantificare.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-SAN-01-CLA",
+      "ambito": "sanita",
+      "problema": "Tempi di attesa e disponibilita di personale possono rendere diseguale l accesso alle cure.",
+      "leva": "Integrare in un agenda verificabile l offerta pubblica e convenzionata; pubblicare tempi per prestazione e area, e pianificare organici per le strutture territoriali.",
+      "evidenza": [
+        "F-SAN-01"
+      ],
+      "benchmark": "-",
+      "oppositori": "Strutture che non pubblicano disponibilita comparabili e gestori di agende separate.",
+      "kpi": "Quota di prestazioni entro la classe di priorita, per regione e struttura; baseline e target da definire.",
+      "fase": 1,
+      "vincolo_giuridico": "legge ordinaria, accordi Stato-Regioni e contratti",
+      "costo": "alto",
+      "fonte": "claude/proposte-revisione; consolidamento codex",
+      "confidenza": "bassa",
+      "gate": "Misurazione omogenea delle liste, piano del personale, accordi regionali e copertura pluriennale verificata.",
+      "rischio": "Una vetrina unica senza capacita aggiuntiva puo solo redistribuire le attese.",
+      "nota": "Deriva da proposte/P-SER-1. Valutare differenze regionali e tempi di attuazione; costo preliminare senza stima monetaria.",
+      "stato": "proposta"
+    },
+    {
+      "id": "P-GIU-01-CLA",
+      "ambito": "giustizia",
+      "problema": "L organizzazione degli uffici giudiziari non e comparabile con dati pubblici sufficientemente leggibili.",
+      "leva": "Pubblicare per ufficio durata, arretrato, clearance rate e risorse con definizioni omogenee; sperimentare miglioramenti organizzativi e valutarli.",
+      "evidenza": [],
+      "benchmark": "-",
+      "oppositori": "Uffici chiamati a fornire dati standardizzati e a rendere conto delle differenze.",
+      "kpi": "Copertura e aggiornamento degli indicatori per ufficio; andamento dei tempi su casi comparabili, con baseline e target da definire.",
+      "fase": 0,
+      "vincolo_giuridico": "regolamenti e atti organizzativi",
+      "costo": "basso",
+      "fonte": "claude/proposte-revisione; consolidamento codex",
+      "confidenza": "bassa",
+      "gate": "Definizioni statistiche condivise, tutela dei dati dei procedimenti e confronto dei carichi per complessita.",
+      "rischio": "Classifiche grezze possono indurre selezione dei casi o penalizzare uffici con carichi diversi.",
+      "nota": "Deriva da proposte/P-GIU-2; collega i rilievi di 03_VERIFICA/01_GIUSTIZIA_ANALISI.md. Costo e copertura da quantificare.",
+      "stato": "proposta"
+    }
+  ]
+}

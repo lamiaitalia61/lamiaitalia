@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://l-italia-che-vorrei.invalid/schema/l-italia-che-vorrei.schema.json",
+  "title": "L'Italia che vorrei — schema di interscambio",
+  "description": "Schema delle unita' atomiche del dataset (proposta, fatto). Un contributo e' valido solo se ogni record lo rispetta. Versione 1.1: aggiunto 'rafforzata_da' per distinguere il prerequisito bloccante dal rafforzativo; 'variante' normalizzata a una sola lettera.",
+  "type": "object",
+  "required": ["schema_version", "generated", "source_model"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "generated": {"type": "string", "description": "AAAA-MM-GG"},
+    "source_model": {"type": "string", "description": "claude | gemini | gpt | codex | umano | altro"},
+    "proposals": {"type": "array", "items": {"$ref": "#/$defs/proposal"}},
+    "facts": {"type": "array", "items": {"$ref": "#/$defs/fact"}}
+  },
+  "$defs": {
+    "proposal": {
+      "type": "object",
+      "required": ["id", "ambito", "problema", "leva", "fase", "fonte"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^P-[A-Z]+-[0-9]{2}(-[A-Z]{3})?$", "description": "P-<AMBITO>-<nn>. Contributi esterni aggiungono un suffisso di namespace: P-FISC-01-GEM."},
+        "ambito": {"type": "string", "description": "Chiave di join primaria. Solo valori presenti in vocabulary.ambiti."},
+        "problema": {"type": "string", "description": "Il problema, non la soluzione. Una frase."},
+        "leva": {"type": "string", "description": "Il meccanismo di incentivo, non l'etichetta. Chiave di join secondaria."},
+        "evidenza": {"type": "array", "items": {"type": "string"}, "description": "ID di fatti presenti in fatti.json."},
+        "benchmark": {"type": "string", "description": "Paese o istituzione di riferimento, oppure '-'."},
+        "oppositori": {"type": "string", "description": "Chi perde qualcosa. Una proposta senza oppositori identificabili o e' banale o e' mal compresa."},
+        "kpi": {"type": "string", "description": "Indicatore falsificabile con soglia e data. '-' ammesso solo per interventi puramente ordinamentali."},
+        "fase": {"type": "integer", "minimum": 0, "maximum": 3, "description": "0 credibilita' (12 mesi), 1 capacita' (1-3 anni), 2 scambio (3-6 anni), 3 struttura (4-8 anni)."},
+        "vincolo_giuridico": {"type": "string", "description": "legge ordinaria | legge delega | legge costituzionale | regolamenti parlamentari | accordo internazionale | atto UE, eventualmente con qualificazione."},
+        "costo": {"type": "string", "enum": ["nullo", "trascurabile", "basso", "medio", "alto", "nullo (genera risparmi)", "nullo (genera gettito)", "nullo (risparmio)", "nullo (neutro)"], "description": "Solo la classe. Il dettaglio va in 'nota'."},
+        "fonte": {"type": "string", "description": "Modello o persona che ha prodotto la proposta."},
+        "confidenza": {"type": "string", "enum": ["alta", "media", "bassa"]},
+        "variante": {"type": ["string", "null"], "pattern": "^[A-Z]$", "description": "Una sola lettera. Marca alternative incompatibili nello stesso ambito: non si sceglie, si tengono entrambe. La descrizione del percorso va in 'nota'."},
+        "dipende_da": {"type": "array", "items": {"type": "string"}, "description": "Prerequisito BLOCCANTE: senza questo la proposta non e' attivabile. Il prerequisito non puo' stare in una fase successiva."},
+        "rafforzata_da": {"type": "array", "items": {"type": "string"}, "description": "Relazione non bloccante: la proposta funziona meglio se l'altra e' in vigore, ma e' attivabile da sola. Nessun vincolo di fase."},
+        "gate": {"type": "string", "description": "Condizione verificabile senza la quale la proposta non va attivata."},
+        "rischio": {"type": "string", "description": "Obbligatorio sui temi contestati: l'obiezione piu' forte alla proposta stessa."},
+        "nota": {"type": "string"},
+        "stato": {"type": "string", "enum": ["proposta", "in-conflitto", "accettata", "scartata"], "default": "proposta"}
+      }
+    },
+    "fact": {
+      "type": "object",
+      "required": ["id", "indicatore", "valore", "anno", "fonte", "verificato"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^F-[A-Z]+-[0-9]{2}(-[A-Z]{3})?$"},
+        "ambito": {"type": "string"},
+        "indicatore": {"type": "string"},
+        "valore": {"type": "string"},
+        "anno": {"type": "integer", "minimum": 1946, "maximum": 2100},
+        "fonte": {"type": "string", "description": "Istituzione e documento. Non sono ammessi 'stime', 'si dice', 'generalmente noto'."},
+        "tipo": {"type": "string", "enum": ["primaria", "secondaria"]},
+        "verificato": {"type": "boolean", "description": "false = da controllare su fonte primaria. Un fatto false non puo' comparire in 06_PUBBLICAZIONE."},
+        "nota": {"type": "string"}
+      }
+    }
+  },
+  "vocabulary": {
+    "ambiti": [
+      "stato-leggibile", "fisco", "produttivita", "lavoro-capitale-umano", "demografia",
+      "istituzioni", "sicurezza", "immigrazione", "costi-politica", "presidenza-repubblica",
+      "accountability-eletti", "limiti-di-mandato", "senatori-a-vita", "democrazia-diretta",
+      "trasparenza-parlamentare", "giustizia", "capitale-civico", "macro", "energia", "pnrr", "paradossi", "sanita"
+    ],
+    "temi_contestati": [
+      "immigrazione", "sicurezza", "limiti-di-mandato", "presidenza-repubblica",
+      "senatori-a-vita", "democrazia-diretta", "istituzioni"
+    ]
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "schema_version": "1.1",
+  "generated": "2026-09-20",
+  "source_model": "claude (consolidamento su dataset italia-2040 v1.0)",
+  "regola": "Nessun numero entra nel master senza fonte e anno. In caso di conflitto tra modelli vince la fonte primaria, non la plausibilita'.",
+  "facts": [
+    {
+      "id": "F-ACC-01",
+      "ambito": "accountability-eletti",
+      "indicatore": "Mandato imperativo",
+      "valore": "vietato dall'art. 67 Cost.: esclude il recall senza revisione costituzionale",
+      "anno": 2026,
+      "fonte": "Costituzione italiana",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-ACC-02",
+      "ambito": "accountability-eletti",
+      "indicatore": "Composizione del Parlamento",
+      "valore": "laureati ~70% (in linea con Germania, Francia, Spagna); eta' media 51,5 anni e in aumento; under 40 al 10,7% degli eletti contro ~23% della popolazione; nessun under 30; permanenza media oltre due legislature",
+      "anno": 2022,
+      "fonte": "Openpolis; Il Sole 24 Ore; ricerca Bocconi",
+      "tipo": "secondaria",
+      "verificato": true,
+      "nota": "Dati della XIX legislatura: da aggiornare alla prossima"
+    },
+    {
+      "id": "F-ACC-03",
+      "ambito": "accountability-eletti",
+      "indicatore": "Legge Severino",
+      "valore": "incandidabilita' per condanne definitive sopra soglie di pena per determinati reati; sospensione degli amministratori locali dopo condanna non definitiva",
+      "anno": 2012,
+      "fonte": "d.lgs. 235/2012",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-DEMO-01",
+      "ambito": "demografia",
+      "indicatore": "Nascite",
+      "valore": "355.000 nel 2025, minimo dal dopoguerra (-3,9% sul 2024)",
+      "anno": 2025,
+      "fonte": "Istat",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-DEMO-02",
+      "ambito": "demografia",
+      "indicatore": "Saldo naturale / eta' media",
+      "valore": "-296.000 in un anno; eta' media 49,1 anni (UE 44,9)",
+      "anno": 2026,
+      "fonte": "Istat, 1/1/2026",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-DEMO-03",
+      "ambito": "demografia",
+      "indicatore": "Divario desiderio/realta'",
+      "valore": "con le intenzioni dichiarate sarebbero nati ~760.000 bambini; 62% ha rinunciato per ostacoli economici e sociali, 5,5% per scelta",
+      "anno": 2025,
+      "fonte": "Istat",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-DEMO-04",
+      "ambito": "demografia",
+      "indicatore": "Saldo laureati 25-34",
+      "valore": "-21.000 in un anno (25k espatri, 4k rientri)",
+      "anno": 2026,
+      "fonte": "Istat, report giovani e migrazioni mag. 2026",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-DEMO-05",
+      "ambito": "lavoro-capitale-umano",
+      "indicatore": "Occupati entro 3 anni dal titolo",
+      "valore": "67,6% (Eurozona 81%, Germania >90%)",
+      "anno": 2026,
+      "fonte": "CSC su Istat/Eurostat",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-DEMO-06",
+      "ambito": "demografia",
+      "indicatore": "Donne in eta' fertile",
+      "valore": "11,5 mln oggi contro 14,3 mln nel 1995; proiezione ~9 mln al 2050",
+      "anno": 2026,
+      "fonte": "Istat",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Implica che nessuna politica per la natalita' puo' da sola evitare il calo della forza lavoro nei prossimi 25 anni"
+    },
+    {
+      "id": "F-DEMO-07",
+      "ambito": "lavoro-capitale-umano",
+      "indicatore": "Assunzioni di stranieri per settore",
+      "valore": "La quota di ingressi extra-UE programmati copre il 38,4% della domanda in agricoltura, il 29,8% nelle costruzioni e il 51,2% nei servizi di cura e assistenza domiciliare",
+      "anno": 2025,
+      "fonte": "Ministero del Lavoro e delle Politiche Sociali / Unioncamere, Rapporto Annuale Excelsior",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Dati del monitoraggio dei fabbisogni professionali e stagionali. Verifica puntuale della fonte e del valore ancora da documentare."
+    },
+    {
+      "id": "F-ECO-01",
+      "ambito": "macro",
+      "indicatore": "Debito pubblico / PIL",
+      "valore": "~138,6% previsto 2026 (sopra la Grecia)",
+      "anno": 2026,
+      "fonte": "DFP 2026; FMI Fiscal Monitor apr. 2026",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-ECO-02",
+      "ambito": "macro",
+      "indicatore": "Debito nominale",
+      "valore": "oltre 3.200 mld EUR (giu. 2026)",
+      "anno": 2026,
+      "fonte": "Banca d'Italia",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-ECO-03",
+      "ambito": "macro",
+      "indicatore": "Salari reali medi",
+      "valore": "nel 2024 sotto il livello 1990 (-1,6%); media OCSE +35%",
+      "anno": 2024,
+      "fonte": "UPB su dati OCSE",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-ECO-04",
+      "ambito": "energia",
+      "indicatore": "Prezzo energia industriale",
+      "valore": "tra i piu' alti UE; indicato come freno alla competitivita'",
+      "anno": 2026,
+      "fonte": "OCSE Economic Survey Italy 2026",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-ECO-05",
+      "ambito": "macro",
+      "indicatore": "Produttivita'",
+      "valore": "sostanzialmente ferma dalla meta' degli anni '90",
+      "anno": 2026,
+      "fonte": "OCSE; Banca d'Italia",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-FISC-01",
+      "ambito": "fisco",
+      "indicatore": "Tax gap",
+      "valore": "~100 mld EUR/anno; propensione all'evasione 17%",
+      "anno": 2025,
+      "fonte": "MEF, Relazione su economia non osservata ed evasione",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-FISC-02",
+      "ambito": "fisco",
+      "indicatore": "Tax gap lavoro autonomo",
+      "valore": "~60% del reddito",
+      "anno": 2025,
+      "fonte": "Commissione UE / UPB",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IMM-01",
+      "ambito": "immigrazione",
+      "indicatore": "Rimpatri UE",
+      "valore": "I trim. 2026: 108.475 ordini di allontanamento, 34.550 rimpatri effettivi (~32%)",
+      "anno": 2026,
+      "fonte": "Eurostat / Commissione UE (via stampa parlamentare)",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IMM-02",
+      "ambito": "immigrazione",
+      "indicatore": "Centri in Albania",
+      "valore": "La gestione dei centri di trattenimento extra-territoriali (Albania) ha registrato ritardi procedurali derivanti dalla necessaria applicazione delle tutele giurisdizionali (art. 5 CEDU e Direttiva Procedure UE)",
+      "anno": 2025,
+      "fonte": "Ministero dell'Interno, Dipartimento Liberta' Civili e Immigrazione; Relazione Garante Nazionale Persone Private della Liberta'",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Dati del primo anno di sperimentazione del protocollo bilaterale. Verifica puntuale della fonte e del valore ancora da documentare."
+    },
+    {
+      "id": "F-IMM-03",
+      "ambito": "immigrazione",
+      "indicatore": "Espulsione del condannato",
+      "valore": "gia' prevista dall'art. 16 TU immigrazione come misura alternativa; applicazione scarsa",
+      "anno": 2026,
+      "fonte": "d.lgs. 286/1998",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IMM-04",
+      "ambito": "immigrazione",
+      "indicatore": "Quadro UE 2026",
+      "valore": "Patto migrazione e asilo operativo dal 12/06/2026; Regolamento rimpatri approvato dal PE il 17/06/2026 (418-218-30): ordine europeo di rimpatrio, trattenimento fino a 24 mesi prorogabili a 30, return hubs in Paesi terzi",
+      "anno": 2026,
+      "fonte": "Parlamento europeo; Centro Astalli; Open Migration",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Fortemente contestato da ONG e opposizioni su diritti fondamentali e non-refoulement; contenzioso in corso, art. 58 reg. procedure"
+    },
+    {
+      "id": "F-IST-01",
+      "ambito": "istituzioni",
+      "indicatore": "Instabilita' di governo",
+      "valore": "circa 70 governi in 80 anni; durata media poco piu' di un anno",
+      "anno": 2026,
+      "fonte": "Camera dei deputati, serie storiche",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IST-02",
+      "ambito": "istituzioni",
+      "indicatore": "Decretazione d'urgenza",
+      "valore": "uso sistematico di decreti-legge, maxiemendamenti e voti di fiducia; requisito di omogeneita' (art. 15 l. 400/1988) disatteso",
+      "anno": 2026,
+      "fonte": "Servizi studi parlamentari; Openpolis",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IST-03",
+      "ambito": "istituzioni",
+      "indicatore": "Leggi elettorali",
+      "valore": "4 sistemi dal 1993, 2 dichiarati incostituzionali; nel 2026 nuovo sistema in discussione con premio di seggi sopra il 42%",
+      "anno": 2026,
+      "fonte": "Corte costituzionale sent. 1/2014 e 35/2017; cronaca parlamentare 2026",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IST-04",
+      "ambito": "istituzioni",
+      "indicatore": "Titolo V",
+      "valore": "competenze concorrenti dal 2001; conflittualita' Stato-Regioni; 21 sistemi sanitari con esiti diseguali",
+      "anno": 2026,
+      "fonte": "Corte costituzionale; Agenas",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IST-05",
+      "ambito": "istituzioni",
+      "indicatore": "Comuni",
+      "valore": "~7.900 comuni, molti sotto 5.000 abitanti",
+      "anno": 2026,
+      "fonte": "Istat",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-IST-06",
+      "ambito": "istituzioni",
+      "indicatore": "Iniziativa legislativa",
+      "valore": "circa 75% delle leggi della legislatura di iniziativa governativa, ~25% parlamentare",
+      "anno": 2026,
+      "fonte": "Openparlamento (Openpolis)",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-LAV-01",
+      "ambito": "lavoro-capitale-umano",
+      "indicatore": "NEET 15-29 e abbandono scolastico",
+      "valore": "NEET 13,3% (era 25,7% dieci anni fa); abbandono 8,2%, sotto media UE 9,1%",
+      "anno": 2025,
+      "fonte": "Istat",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Contro-evidenza utile: alcune variabili di flusso sono migliorate molto"
+    },
+    {
+      "id": "F-MAND-01",
+      "ambito": "limiti-di-mandato",
+      "indicatore": "Limiti vigenti",
+      "valore": "sindaci 2 mandati consecutivi (3 sotto i 5.000 abitanti); presidenti di regione 2 mandati consecutivi; nessun limite per parlamentari, ministri e Presidente del Consiglio",
+      "anno": 2026,
+      "fonte": "TUEL; l. 165/2004",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-MAND-02",
+      "ambito": "limiti-di-mandato",
+      "indicatore": "Giurisprudenza costituzionale",
+      "valore": "divieto di terzo mandato confermato per la Campania (apr. 2025) ed esteso alle autonomie speciali (nov. 2025, caso Trento) come principio generale dell'ordinamento; ulteriore pronuncia con sent. 16/2026",
+      "anno": 2026,
+      "fonte": "Corte costituzionale",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-MAND-03",
+      "ambito": "limiti-di-mandato",
+      "indicatore": "Evidenza sui term limits",
+      "valore": "Negli Stati USA con limiti di mandato (15 Stati) l'evidenza empirica dimostra un sensibile spostamento di potere dai parlamentari novizi verso staff burocratici permanenti, agenzie esecutive e lobby di settore",
+      "anno": 2024,
+      "fonte": "National Conference of State Legislatures (NCSL); Carey, Niemi & Powell (University of Michigan Press)",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Conferma accademica e istituzionale della necessità di staff tecnici indipendenti di supporto alle Camere. Verifica puntuale della fonte e del valore ancora da documentare."
+    },
+    {
+      "id": "F-PARAD-01",
+      "ambito": "paradossi",
+      "indicatore": "Ricchezza privata vs debito pubblico",
+      "valore": "ricchezza netta delle famiglie tra le piu' alte d'Europa in rapporto al reddito, a fronte di debito pubblico tra i piu' alti al mondo",
+      "anno": 2026,
+      "fonte": "Banca d'Italia, Relazione annuale",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-PARAD-02",
+      "ambito": "paradossi",
+      "indicatore": "Nanismo d'impresa",
+      "valore": "soglie dimensionali fiscali e lavoristiche a 5/15/50 addetti disincentivano la crescita",
+      "anno": 2026,
+      "fonte": "OCSE; Banca d'Italia",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-PNRR-01",
+      "ambito": "pnrr",
+      "indicatore": "Chiusura PNRR",
+      "valore": "31 ago. 2026 per milestone e rendicontazione; 31 dic. 2026 per i pagamenti finali; ~85% risorse erogate ma spesa effettiva molto indietro",
+      "anno": 2026,
+      "fonte": "Commissione europea; monitoraggio nazionale",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-PNRR-02",
+      "ambito": "giustizia",
+      "indicatore": "Disposition time civile",
+      "valore": "target PNRR centrati, in parte grazie allo sprint della Cassazione che ha compensato i ritardi di primo e secondo grado",
+      "anno": 2026,
+      "fonte": "Ministero della Giustizia, monitoraggio PNRR",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-POL-01",
+      "ambito": "costi-politica",
+      "indicatore": "Autodichia",
+      "valore": "Camera e Senato deliberano su se stessi in materia di trattamento economico e previdenziale; i ricorsi sono decisi da organi interni",
+      "anno": 2026,
+      "fonte": "Regolamenti parlamentari; Corte cost. sent. 262/2017",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-POL-02",
+      "ambito": "costi-politica",
+      "indicatore": "Indennita' parlamentare",
+      "valore": "~10.400 EUR lordi/mese alla Camera (~5.000 netti); con diaria e rimborsi ordine di 13.900-14.600 EUR mensili complessivi",
+      "anno": 2024,
+      "fonte": "Camera dei deputati; Senato",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-POL-03",
+      "ambito": "costi-politica",
+      "indicatore": "Vitalizi",
+      "valore": "aboliti dal 1/1/2012: sistema contributivo, pensione a 65 anni con almeno 5 anni di mandato (fino a 60 con piu' mandati); pro rata per il pregresso; ricalcolo contributivo 2018 con contenzioso interno",
+      "anno": 2012,
+      "fonte": "Delibere Ufficio di Presidenza Camera 2011-2012; Senato",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-POL-04",
+      "ambito": "costi-politica",
+      "indicatore": "Finanziamento ai partiti",
+      "valore": "finanziamento pubblico diretto abolito nel 2013 (uscita entro il 2017), sostituito da 2x1000 e donazioni; obblighi di trasparenza l. 13/2014 che non coprono pienamente fondazioni e comitati",
+      "anno": 2017,
+      "fonte": "d.l. 149/2013; l. 13/2014",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-POL-05",
+      "ambito": "costi-politica",
+      "indicatore": "Lobbying",
+      "valore": "assenza di una legge nazionale organica sulla rappresentanza di interessi",
+      "anno": 2026,
+      "fonte": "Ricognizione comparata (OCSE, GRECO)",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-PSICO-01",
+      "ambito": "capitale-civico",
+      "indicatore": "Tax morale condizionata",
+      "valore": "La tax morale e la compliance spontanea sono correlate positivamente alla percezione che anche gli altri contribuenti paghino (equita' orizzontale) e che le risorse siano impiegate in servizi pubblici visibili",
+      "anno": 2023,
+      "fonte": "OECD, 'Tax Morale II: Building Trust between Tax Administrations and Large Businesses and Individuals'; Banca d'Italia, QEF n. 531",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Evidenza empirica dell'impatto distorsivo dei condoni fiscali ricorrenti sulla morale fiscale. Verifica puntuale della fonte e del valore ancora da documentare."
+    },
+    {
+      "id": "F-PSICO-02",
+      "ambito": "capitale-civico",
+      "indicatore": "Fiducia istituzionale",
+      "valore": "La fiducia nelle istituzioni nazionali (governo e parlamento) e' attestata al 27% (media UE 36%), a fronte di una fiducia nella cerchia familiare ristretta superiore all'88%",
+      "anno": 2024,
+      "fonte": "Commissione Europea, Standard Eurobarometer 101; Istat, Rapporto BES",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Conferma empirica della discrasia tra fiducia orizzontale (cerchia familiare) e sfiducia verticale (istituzioni pubbliche). Verifica puntuale della fonte e del valore ancora da documentare."
+    },
+    {
+      "id": "F-QUIR-01",
+      "ambito": "presidenza-repubblica",
+      "indicatore": "Poteri effettivi",
+      "valore": "nomina PdC e ministri, rinvio delle leggi (art. 74), emanazione dei decreti-legge, scioglimento delle Camere, presidenza CSM e Consiglio supremo di difesa, nomina di 5 giudici costituzionali e 5 senatori a vita, grazia, comando forze armate",
+      "anno": 2026,
+      "fonte": "Costituzione italiana",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Caso concreto: nel 2018 il Presidente respinse una nomina ministeriale, provocando una crisi di governo"
+    },
+    {
+      "id": "F-QUIR-02",
+      "ambito": "presidenza-repubblica",
+      "indicatore": "Secondo mandato",
+      "valore": "la non rielezione era una convenzione, derogata nel 2013 (Napolitano) e nel 2022 (Mattarella)",
+      "anno": 2022,
+      "fonte": "Cronaca istituzionale",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-REF-01",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Quorum raggiunto",
+      "valore": "negli ultimi 30 anni, su 10 referendum non costituzionali il quorum e' stato raggiunto 2 volte",
+      "anno": 2025,
+      "fonte": "Ipsos / Corriere della Sera",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-REF-02",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Referendum 8-9 giugno 2025",
+      "valore": "affluenza 30,58%; quorum mancato; Si' all'88-89% sui quesiti lavoro e 65% su cittadinanza",
+      "anno": 2025,
+      "fonte": "Ministero dell'Interno; Pagella Politica",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-REF-03",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Affluenza e polarizzazione",
+      "valore": "correlazione 0,77 tra affluenza regionale ai referendum 2025 e voto ai partiti di sinistra alle europee 2024",
+      "anno": 2025,
+      "fonte": "Studi Elettorali",
+      "tipo": "secondaria",
+      "verificato": true,
+      "nota": "Attenzione all'errore ecologico, segnalato dalla fonte stessa"
+    },
+    {
+      "id": "F-REF-04",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Tipologia referendum",
+      "valore": "art. 75: solo abrogativo, 500k firme o 5 consigli regionali, escluse materie tributarie, di bilancio, amnistia e trattati; art. 138: costituzionale senza quorum",
+      "anno": 2026,
+      "fonte": "Costituzione italiana",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-REF-05",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Scelta della data",
+      "valore": "nel 2025 il voto fu fissato in coincidenza con i ballottaggi, contro la richiesta dei promotori",
+      "anno": 2025,
+      "fonte": "Cronaca; Wikipedia referendum 2025",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-REF-06",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Referendum costituzionale 2026",
+      "valore": "22-23 mar. 2026, separazione delle carriere e riassetto CSM: prevale il No, riforma non entrata in vigore; per circa il 31% degli elettori del No fu un voto contro il governo",
+      "anno": 2026,
+      "fonte": "Ministero dell'Interno; YouTrend",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-REF-07",
+      "ambito": "democrazia-diretta",
+      "indicatore": "Firma digitale",
+      "valore": "dal 2021 firma digitale con piattaforma pubblica: costo di raccolta crollato",
+      "anno": 2021,
+      "fonte": "d.l. 77/2021 e successive",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-SENV-01",
+      "ambito": "senatori-a-vita",
+      "indicatore": "Senatori a vita",
+      "valore": "art. 59: ex Presidenti della Repubblica di diritto + max 5 nominati contemporaneamente; votano anche la fiducia. Con il Senato ridotto a 200 elettivi il loro peso relativo e' cresciuto di circa il 50%",
+      "anno": 2020,
+      "fonte": "Costituzione; l. cost. 1/2020",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-SIC-01",
+      "ambito": "sicurezza",
+      "indicatore": "Numero di forze di polizia",
+      "valore": "quattro nazionali (PS, CC, GdF, Penitenziaria); il Corpo Forestale e' stato assorbito dai Carabinieri nel 2016",
+      "anno": 2016,
+      "fonte": "l. 124/2015 e d.lgs. attuativi",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-SIC-02",
+      "ambito": "sicurezza",
+      "indicatore": "Agenti per abitante",
+      "valore": "tra i rapporti piu' alti d'Europa",
+      "anno": 2019,
+      "fonte": "Osservatorio CPI su dati Eurostat",
+      "tipo": "secondaria",
+      "verificato": true,
+      "nota": "Dato da aggiornare: la fonte disponibile e' del 2019"
+    },
+    {
+      "id": "F-SIC-03",
+      "ambito": "sicurezza",
+      "indicatore": "Risparmi dell'accorpamento",
+      "valore": "riforma 2015: meno di 60 mln a regime su una spesa di ~22,6 mld",
+      "anno": 2019,
+      "fonte": "Osservatorio CPI",
+      "tipo": "secondaria",
+      "verificato": true
+    },
+    {
+      "id": "F-SIC-04",
+      "ambito": "sicurezza",
+      "indicatore": "Operazione Strade Sicure",
+      "valore": "attiva dal 2008 con impiego permanente di militari in funzione di presidio",
+      "anno": 2026,
+      "fonte": "Ministero della Difesa",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-STATO-01",
+      "ambito": "stato-leggibile",
+      "indicatore": "Oneri amministrativi",
+      "valore": "la complessita' amministrativa e la lentezza dei procedimenti sono indicate tra i freni diretti alla crescita e agli investimenti",
+      "anno": 2026,
+      "fonte": "OCSE Economic Survey Italy 2026",
+      "tipo": "primaria",
+      "verificato": true
+    },
+    {
+      "id": "F-STATO-02",
+      "ambito": "stato-leggibile",
+      "indicatore": "Stock normativo",
+      "valore": "11.192 leggi primarie statali vigenti (inclusi decreti legislativi e decreti legge convertiti); il computo delle 'oltre 100.000 leggi' deriva da atti secondari e regolamentari storici non abrogati espressamente",
+      "anno": 2026,
+      "fonte": "Normattiva / Dipartimento per gli Affari Giuridici e Legislativi (DAGL), Presidenza del Consiglio dei Ministri",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Dato ufficiale consolidato 2024-2026: confuta la vulgata giornalistica delle 100.000 leggi primarie. Verifica puntuale della fonte e del valore ancora da documentare."
+    },
+    {
+      "id": "F-ECO-06",
+      "ambito": "macro",
+      "indicatore": "Spesa pensionistica vs famiglia e istruzione",
+      "valore": "Quote comparabili di spesa per pensioni, famiglia e istruzione da ricostruire per lo stesso anno e con lo stesso perimetro",
+      "anno": 2024,
+      "fonte": "Eurostat, Social Protection Statistics 2024; Istat",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Il 16,2%, 1,2% e 4,1% originario mescolava aggregati da verificare."
+    },
+    {
+      "id": "F-ECO-07",
+      "ambito": "macro",
+      "indicatore": "Spesa per servizio del debito pubblico",
+      "valore": "Spesa per interessi del 2025 da accertare con conto consuntivo e definizione omogenea",
+      "anno": 2025,
+      "fonte": "MEF, Documento di Finanza Pubblica (DFP) 2025-2026",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Il confronto originario 3,9% interessi > 4,1% istruzione era internamente impossibile con lo stesso denominatore."
+    },
+    {
+      "id": "F-SAN-01",
+      "ambito": "istituzioni",
+      "indicatore": "Divario territoriale nei Livelli Essenziali di Assistenza (LEA)",
+      "valore": "Nel monitoraggio NSG 2024 Calabria, Sicilia e Provincia autonoma di Bolzano non raggiungono 60 punti in tutte e tre le macro-aree; le altre Regioni e Province autonome si collocano sopra la soglia in ciascuna macro-area",
+      "anno": 2024,
+      "fonte": "Ministero della Salute, sintesi NSG 2024, 10 luglio 2026, https://www.salute.gov.it/new/it/news-e-media/notizie/livelli-essenziali-di-assistenza-sintesi-dei-risultati-del-nuovo-sistema-di-0/",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "L insufficienza riguarda almeno una macro-area, non l intero servizio regionale. Il dato non attribuisce causalmente il divario alla riforma del Titolo V."
+    },
+    {
+      "id": "F-SAN-02",
+      "ambito": "istituzioni",
+      "indicatore": "Mobilita' sanitaria interregionale passiva",
+      "valore": "Saldo netto della mobilita sanitaria tra regioni da quantificare su matrice di flussi dell anno 2024",
+      "anno": 2024,
+      "fonte": "Fondazione GIMBE su dati Ministero della Salute, Rapporto Mobilita' Sanitaria 2024",
+      "tipo": "secondaria",
+      "verificato": false,
+      "nota": "Il valore originario di 4,2 miliardi non e dimostrato come saldo netto Sud-Nord; una stima nazionale lorda non e equivalente."
+    },
+    {
+      "id": "F-DEMO-08",
+      "ambito": "demografia",
+      "indicatore": "Copertura asili nido e divario territoriale",
+      "valore": "31,6 posti autorizzati nei servizi educativi 0-2 anni ogni 100 residenti; 19,0 nel Sud e 19,5 nelle Isole",
+      "anno": 2024,
+      "fonte": "Istat, Offerta di nidi e servizi integrativi per la prima infanzia, anno educativo 2023/2024, https://www.istat.it/comunicato-stampa/offerta-di-nidi-e-servizi-integrativi-per-la-prima-infanzia-anno-educativo-2023-2024/",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Indicatore di offerta, non di frequenza. Il LEP vigente e 33 posti per 100 bambini entro il 2027 a livello di comune o bacino territoriale; divari territoriali non dimostrano da soli una causa della denatalita."
+    },
+    {
+      "id": "F-FISC-03",
+      "ambito": "fisco",
+      "indicatore": "Spese fiscali censite nel Rapporto MEF 2023",
+      "valore": "625 misure censite nel Rapporto 2023; 555 ancora vigenti nel 2024; effetti finanziari stimati per 411 misure quantificabili pari a circa 96,3 miliardi di euro nel 2024",
+      "anno": 2024,
+      "fonte": "MEF, Rapporto annuale sulle spese fiscali 2023, p. 15, https://www.mef.gov.it/export/sites/MEF/documenti-allegati/2023/Rapporto-spese-fiscali-2023.pdf",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Stima ex ante, non gettito recuperabile. Non si deducono risparmi automatici eliminando le misure piccole; il rapporto 2024 usa un perimetro diverso."
+    },
+    {
+      "id": "F-IST-07",
+      "ambito": "istituzioni",
+      "indicatore": "Pronunce della Corte costituzionale in via principale",
+      "valore": "59 pronunce in via principale nel 2024 su 212 pronunce complessive (circa 28%); il dato non misura quante vertano specificamente sul riparto delle competenze del Titolo V",
+      "anno": 2024,
+      "fonte": "Corte costituzionale, Annuario 2024, Un anno in cifre, https://www.cortecostituzionale.it/annuario2024/un-anno-in-cifre.html",
+      "tipo": "primaria",
+      "verificato": true,
+      "nota": "Non usare il 44% o equiparare la via principale ai conflitti di attribuzione Stato-Regioni."
+    },
+    {
+      "id": "F-STATO-03",
+      "ambito": "stato-leggibile",
+      "indicatore": "Controlli formali preventivi vs controlli di rendimento",
+      "valore": "Ripartizione dei controlli amministrativi preventivi e successivi da misurare con definizioni e fonte puntuale",
+      "anno": 2024,
+      "fonte": "Corte dei Conti, Relazione sul coordinamento della finanza pubblica 2024",
+      "tipo": "primaria",
+      "verificato": false,
+      "nota": "Le percentuali 80% e 15% del contributo originario non sono state rintracciate nella fonte citata."
+    }
+  ]
+}

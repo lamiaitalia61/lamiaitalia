@@ -1,0 +1,33 @@
+name: valida e privacy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Valida il dataset e i documenti pubblici
+        run: python strumenti/valida.py --pubblicazione
+      - name: Controlla identificatori nei file
+        run: python strumenti/privacy_check.py
+      - name: Controlla i metadati della cronologia pubblicata
+        if: github.event_name == 'push'
+        run: python strumenti/privacy_check.py --history
+      - name: Verifica che i documenti generati siano allineati al dataset
+        run: |
+          python strumenti/genera.py
+          git diff --exit-code -- 02_PROPOSTE 03_VERIFICA 04_COSTITUZIONE 05_PIANO_ATTUAZIONE \
+            || (echo "I documenti generati non corrispondono al dataset: eseguire 'python strumenti/genera.py' e committare." && exit 1)

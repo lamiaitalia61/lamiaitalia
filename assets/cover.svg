@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">L'Italia che vorrei</title>
+  <desc id="desc">Rinnoviamo l'Italia dal basso: idee aperte, dati verificabili, scelte pubbliche.</desc>
+  <rect width="1200" height="440" fill="#101f2d"/>
+  <path d="M0 0h14v440H0z" fill="#22966d"/>
+  <path d="M14 0h8v440h-8z" fill="#e8e6d9"/>
+  <path d="M22 0h14v440H22z" fill="#d9604d"/>
+  <circle cx="1030" cy="82" r="185" fill="#183447"/>
+  <circle cx="1107" cy="357" r="260" fill="#163d3e"/>
+  <path d="M845 96h272M845 137h195M845 178h230" stroke="#6da998" stroke-width="3" opacity=".55"/>
+  <text x="86" y="89" fill="#a7d9c2" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">IDEE APERTE · DATI VERIFICABILI</text>
+  <text x="82" y="207" fill="#f7f4e9" font-family="Georgia, serif" font-size="74" font-weight="700">L'Italia che vorrei</text>
+  <text x="86" y="273" fill="#e7eee7" font-family="Arial, sans-serif" font-size="34">Rinnoviamola noi dal basso.</text>
+  <rect x="86" y="321" width="323" height="57" rx="8" fill="#24966d"/>
+  <text x="112" y="358" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">LEGGI · CONTESTA · CONDIVIDI</text>
+  <path d="M918 278l56 68 113-143" fill="none" stroke="#f2f0dd" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

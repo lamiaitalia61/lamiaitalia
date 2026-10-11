@@ -1,0 +1,37 @@
+# Output generati e dati locali
+build/
+.obsidian/
+__pycache__/
+*.pyc
+*.log
+*.jsonl
+*.har
+*.bundle
+*.zip
+*.patch
+*.db
+*.sqlite
+*.sqlite3
+
+# Configurazione e credenziali
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.asc
+*.pub
+id_ed25519*
+id_rsa*
+.git-credentials
+
+# Metadati di sistema e editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
