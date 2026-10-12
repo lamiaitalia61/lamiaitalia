@@ -8,6 +8,16 @@
 
 **L'Italia ripensata dall'AI, verificata dalle persone.** I modelli aiutano a generare e contestare idee; la decisione resta pubblica e umana.
 
+## Tre proposte da cui partire
+
+Sono proposte aperte, non misure approvate. Ogni scheda mostra anche ciò che resta da verificare.
+
+| Tema | Leggi la proposta | Punto ancora aperto |
+|---|---|---|
+| Burocrazia | [Servizi essenziali accessibili anche con assistenza](02_PROPOSTE/SCHEDE/stato-leggibile.md) (`P-STATO-10-CLA`) | Test di accessibilità, costi e risultati attesi da definire. |
+| Sanità | [Offerta pubblica e convenzionata in un'agenda verificabile](02_PROPOSTE/SCHEDE/sanita.md) (`P-SAN-01-CLA`) | Personale, capacità di cura e copertura economica da stimare. |
+| Giustizia | [Tempi e arretrato comparabili per ufficio](02_PROPOSTE/SCHEDE/giustizia.md) (`P-GIU-01-CLA`) | Evidenze da collegare e confronti da correggere per la complessità dei casi. |
+
 ## Da dove partire
 
 | Se vuoi… | Leggi |
@@ -57,3 +67,5 @@ Citazione pronta: *L'Italia che vorrei, “Proposte per rinnovare l'Italia dal b
 ## English summary
 
 **L'Italia che vorrei** is an open, evidence-led collection of ideas for reforming Italy's institutions, public administration, healthcare, justice, welfare, taxation and public spending. AI helps draft and challenge proposals; people check sources and make choices. The project currently tracks 83 proposals and 66 dated facts, with unresolved evidence and cost estimates clearly marked. Read the [diagnosis](01_RICERCA/03_PERCHE_SIAMO_ARRIVATI_QUI.md), [proposal index](02_PROPOSTE/02_INDICE_PROPOSTE.md), [social content prompts](PROMPT_SOCIAL.md), [contribution guide](CONTRIBUTING.md) and [license](LICENSE). Reuse is welcome with attribution.
+
+Start with three open proposals: [accessible public services](02_PROPOSTE/SCHEDE/stato-leggibile.md) (`P-STATO-10-CLA`), [healthcare appointment transparency](02_PROPOSTE/SCHEDE/sanita.md) (`P-SAN-01-CLA`), and [comparable court data](02_PROPOSTE/SCHEDE/giustizia.md) (`P-GIU-01-CLA`). Their evidence, costs and implementation conditions still need review.
