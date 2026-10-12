@@ -1,6 +1,6 @@
 # Prompt per post, immagini e video brevi
 
-## Analisi delle visualizzazioni esistenti
+## Analisi delle grafiche esistenti
 
 Al momento il repository contiene una sola grafica: [`assets/cover.svg`](assets/cover.svg), una copertina orizzontale 1200 × 440 px. Il blu scuro, il verde e le due strisce laterali danno una riconoscibilità utile; titolo e invito all'azione sono leggibili nella pagina GitHub. Il riquadro verde è stato allargato perché il testo ne usciva. Questa copertina non è un formato pronto per un post verticale o un video 9:16: per quei canali serve una composizione nuova, con meno testo e margini di sicurezza. Il segno di spunta è un elemento grafico, non una certificazione delle 83 proposte o dei 66 fatti.
 
