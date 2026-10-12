@@ -1,6 +1,6 @@
 # Condividi il progetto
 
-**Non ditelo ai politici. O forse sì: fate leggere loro i dati.**
+**Non ditelo ai politici.**
 
 Link: [github.com/lamiaitalia61/lamiaitalia](https://github.com/lamiaitalia61/lamiaitalia)
 

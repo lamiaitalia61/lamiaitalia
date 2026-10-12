@@ -2,11 +2,11 @@
 
 ![L'Italia che vorrei: idee aperte, dati verificabili, scelte pubbliche](assets/cover.svg)
 
-> **Non ditelo ai politici. O forse sì: fate leggere loro i dati.**
+> **Non ditelo ai politici.**
 
 **Nell'Italia che vorrei** la Costituzione si rispetta, la burocrazia aiuta invece di bloccare, i servizi funzionano ovunque e ogni spesa pubblica si può spiegare. **Rinnoviamo l'Italia** con proposte controllabili e discussioni aperte.
 
-«Rinnoviamola noi dal basso, chi è al comando non è capace» è una provocazione, non una prova: qui anche le critiche al potere devono tradursi in problemi misurabili, alternative e responsabilità. **L'Italia ripensata dall'AI, verificata dalle persone**: i modelli aiutano a generare e contestare idee; la decisione resta pubblica e umana.
+**L'Italia ripensata dall'AI, verificata dalle persone.** I modelli aiutano a generare e contestare idee; la decisione resta pubblica e umana.
 
 ## Da dove partire
 
@@ -19,6 +19,7 @@
 | vedere ciò che resta da verificare | [Registro dei fatti](03_VERIFICA/03_REGISTRO_FATTI.md) e [KPI da quantificare](03_VERIFICA/05_KPI_DA_QUANTIFICARE.md) |
 | proporre una correzione | [Come contribuire](CONTRIBUTING.md) |
 | condividere il progetto | [Messaggi pronti e attribuzione](CONDIVIDI.md) |
+| preparare post, immagini e video brevi | [Prompt per i contenuti social](PROMPT_SOCIAL.md) |
 
 ## I temi
 
@@ -55,4 +56,4 @@ Citazione pronta: *L'Italia che vorrei, “Proposte per rinnovare l'Italia dal b
 
 ## English summary
 
-**L'Italia che vorrei** is an open, evidence-led collection of ideas for reforming Italy's institutions, public administration, healthcare, justice, welfare, taxation and public spending. AI helps draft and challenge proposals; people check sources and make choices. The project currently tracks 83 proposals and 66 dated facts, with unresolved evidence and cost estimates clearly marked. Read the [diagnosis](01_RICERCA/03_PERCHE_SIAMO_ARRIVATI_QUI.md), [proposal index](02_PROPOSTE/02_INDICE_PROPOSTE.md), [contribution guide](CONTRIBUTING.md) and [license](LICENSE). Reuse is welcome with attribution.
+**L'Italia che vorrei** is an open, evidence-led collection of ideas for reforming Italy's institutions, public administration, healthcare, justice, welfare, taxation and public spending. AI helps draft and challenge proposals; people check sources and make choices. The project currently tracks 83 proposals and 66 dated facts, with unresolved evidence and cost estimates clearly marked. Read the [diagnosis](01_RICERCA/03_PERCHE_SIAMO_ARRIVATI_QUI.md), [proposal index](02_PROPOSTE/02_INDICE_PROPOSTE.md), [social content prompts](PROMPT_SOCIAL.md), [contribution guide](CONTRIBUTING.md) and [license](LICENSE). Reuse is welcome with attribution.

@@ -11,7 +11,7 @@
   <text x="86" y="89" fill="#a7d9c2" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">IDEE APERTE · DATI VERIFICABILI</text>
   <text x="82" y="207" fill="#f7f4e9" font-family="Georgia, serif" font-size="74" font-weight="700">L'Italia che vorrei</text>
   <text x="86" y="273" fill="#e7eee7" font-family="Arial, sans-serif" font-size="34">Rinnoviamola noi dal basso.</text>
-  <rect x="86" y="321" width="323" height="57" rx="8" fill="#24966d"/>
+  <rect x="86" y="321" width="430" height="57" rx="8" fill="#24966d"/>
   <text x="112" y="358" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">LEGGI · CONTESTA · CONDIVIDI</text>
   <path d="M918 278l56 68 113-143" fill="none" stroke="#f2f0dd" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

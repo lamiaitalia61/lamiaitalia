@@ -6,7 +6,7 @@ status: "BOZZA PUBBLICA"
 
 # L'Italia che vorrei
 
-> **Non ditelo ai politici. O forse sì: fate leggere loro i dati.**
+> **Non ditelo ai politici.**
 
 Questa è la mappa del progetto in Obsidian. Su GitHub parti dal [README](README.md).
 
