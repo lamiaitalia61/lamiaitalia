@@ -5,7 +5,6 @@ tags:
   - proposte
   - stato-leggibile
 status: "GENERATO"
-generato: "2026-10-11"
 sorgente: "dati/proposte.json"
 ---
 

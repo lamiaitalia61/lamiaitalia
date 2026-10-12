@@ -5,7 +5,6 @@ tags:
   - proposte
   - senatori-a-vita
 status: "GENERATO"
-generato: "2026-10-11"
 sorgente: "dati/proposte.json"
 ---
 

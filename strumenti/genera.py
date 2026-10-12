@@ -10,12 +10,10 @@ Regola del progetto (PROTOCOLLO_MERGE): il testo e' un artefatto, la fonte di ve
 """
 import json
 from collections import defaultdict
-from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATI = ROOT / "dati"
-OGGI = date.today().isoformat()
 
 FASE_NOME = {
     0: "Fase 0 — credibilita' (primi 12 mesi)",
@@ -55,7 +53,6 @@ def intestazione(titolo, descrizione, tags, sorgente):
         f'title: "{titolo}"\n'
         "tags:\n" + "".join(f"  - {t}\n" for t in tags) +
         'status: "GENERATO"\n'
-        f'generato: "{OGGI}"\n'
         f'sorgente: "{sorgente}"\n'
         "---\n\n"
         f"# {titolo}\n\n"
